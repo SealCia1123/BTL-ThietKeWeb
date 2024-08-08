@@ -204,27 +204,6 @@ nav {
   border-left: 2px solid darkblue;
 }
 
-.movies {
-  width: 80%;
-}
-
-.movies .movie {
-  width: 25%;
-  text-align: center;
-  padding: 1%;
-}
-
-.movies .movie img {
-  width: 100%;
-}
-
-.movie h3 {
-  font-size: 1.5rem;
-}
-
-.title {
-  text-align: center;
-}
 
 .foot {
   width: 100%;
@@ -238,6 +217,51 @@ footer * {
   padding: 0;
 }
 
-footer img {
-  width: 10%;
+/* Main */
+.movies {
+  background-color: violet;
+  margin: auto;
+  justify-content: space-between;
+  width: 80%;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+
+.left-arrow {
+  font-size: 5rem;
+  margin: 0;
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.right-arrow {
+  margin-right: 0;
+  font-size: 2rem;
+  padding-right: 3rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.movies::-webkit-scrollbar {
+  display: none;
+}
+
+.movies .movie {
+  min-width: 25%;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.movies .movie img {
+  width: 100%;
+}
+
+.movie h3 {
+  font-size: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
 }
