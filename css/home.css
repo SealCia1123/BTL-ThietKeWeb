@@ -219,7 +219,6 @@ footer * {
   font-size: 0.7rem;
 }
 
-<<<<<<< HEAD
 /* Main */
 .movies {
   background-color: violet;
@@ -267,13 +266,4 @@ footer * {
 .title {
   text-align: center;
   font-size: 3rem;
-=======
-footer img {
-  width: 5%;
-  padding: 10px;
-}
-
-footer a {
-  color: green;
->>>>>>> 94524e21f715796f05f6c64d9ab2076b3858ee46
 }
