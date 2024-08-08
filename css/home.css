@@ -1,17 +1,210 @@
-.darkmode {
-    background-color: #11111b;
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    width: 10px;
+    height: 10px;
+    right: 5px;
+}
+
+header:first-child img{
+    padding: 0px;
+    margin: 0px;
+    border: 3px solid darkblue;
+}
+
+.logo-tittle{
+    border-right: 2px solid darkblue;
+}
+
+header h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(10, 10, 118);
+}
+
+header img{
+    width: 120px;
+}
+
+header *{
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+}
+
+header{
+    width: 100%;
+    background-image: linear-gradient(lightskyblue, lightcyan);
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    justify-content: space-between;
+}
+
+main img{
+    width: 100%;
+    height: 2000px;
+}
+
+.login-darkmode{
+    border-left: darkblue solid 2px;
+}
+
+.login{
+    background-color: slategray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.login:hover{
+    background-color: darkgrey;
     color: white;
 }
 
-button {
-    font-size: 3rem;
-    border: 0.3rem;
+.darkmode{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: slateblue;
     border-radius: 10px;
-    background-color: transparent;
-    padding: 1rem;
-    cursor: pointer;
+    width: 100%;
 }
 
-button:hover {
-    background-color: lightgray;
+.darkmode:hover{
+    background-color: darkslateblue;
+    color: white;
 }
+
+.order button:first-child{
+    background-color: lightgreen;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.order button:first-child:hover{
+    background-color: green;
+    color: white;
+}
+
+.order button:last-child{
+    background-color: lightpink;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.order button:last-child:hover{
+    background-color: palevioletred;
+    color: white;
+}
+
+.search *{
+    margin: auto;
+}
+
+.search input{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px 0 0 30px;
+}
+
+.search button{
+    border-radius: 0 30px 30px 0;
+    margin-left: auto;
+    height: 50px;
+    width: 50px;
+}
+
+nav{
+    margin-top: 150px;
+}
+
+.menu{
+    background-color: skyblue;
+    margin: 0;
+    padding: 0;
+}
+
+.menu div>li{
+    list-style-type: none;
+    border-left: 2px solid darkblue;
+}
+
+.menu div>li:first-child{
+    border: 0px;
+}
+
+.menu div>li>a{
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: monospace;
+    display: block;
+}
+
+.menu div>li>a:hover{
+    background-color: lightseagreen;
+    color: white;
+    text-decoration: underline white ;
+}
+
+.menu>div{
+    margin: auto;
+}
+
+.groupmenu>div{
+    margin-left: auto;
+}
+
+.imenu:hover .iimenu{
+    display: block !important;
+}
+
+.iimenu>li>a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.iimenu>li{
+    padding: 10px;
+    list-style-type: none;
+    border: 3px dashed yellow;
+    border-top: 0px;
+    background-color: rgb(48, 48, 48);
+}
+
+.iimenu>li:first-child{
+    border-top: 3px dashed yellow;
+}
+
+.iimenu>li>a{
+    color: white;
+}
+
+.iimenu{
+    position: absolute;
+    display: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+/* .iimenu>li:hover{
+    background-color: lightseagreen;
+} */
+
+.iimenu>li:hover a{
+    color: red;
+}
+
+.groupmenu>div>li:first-child{
+    border-left: 2px solid darkblue;
+}
+
