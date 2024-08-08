@@ -10,6 +10,5 @@ window.onload = function () {
     let leftButton = document.getElementById("left-arrow");
     leftButton.onclick = function () {
         console.log("1");
-        document.getElementsByClassName("movies").scrollLeft -= 20;
     };
 };
