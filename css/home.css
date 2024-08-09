@@ -7,136 +7,134 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    justify-content: center;
 }
 
 body {
     margin: 0;
+    background: linear-gradient(#180161, #4F1787);
+    color: #d6e3ee;
 }
 
-i {
-    width: 10px;
-    height: 10px;
-    right: 5px;
-}
-
+/* HEADER */
 header {
-    padding: 0px;
-    margin: 0px;
-}
-
-header h1 {
-    color: rgb(10, 10, 118);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5rem;
-}
-
-.logo-tittle {
-    border-right: 2px solid darkblue;
-}
-
-header img {
-    width: 120px;
-}
-
-header * {
-    position: relative;
-    margin: 5px;
-    padding: 5px;
-}
-
-header {
+    background-color: #03346E;
     width: 100%;
-    background-image: linear-gradient(lightskyblue, lightcyan);
-    top: 0px;
-    left: 0px;
-    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
-.login-darkmode {
-    border-left: darkblue solid 2px;
-}
-
-.login {
-    background-color: slategray;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.login:hover {
-    background-color: darkgrey;
-    color: white;
-}
-
-.darkmode {
-    background-color: slateblue;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.darkmode:hover {
-    background-color: darkslateblue;
-    color: white;
-}
-
-.order button:first-child {
-    background-color: lightgreen;
-    font-size: 1rem;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.order button:first-child:hover {
-    background-color: green;
-    color: white;
-}
-
-.order button:last-child {
-    background-color: lightpink;
-    font-size: 1rem;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.order button:last-child:hover {
-    background-color: palevioletred;
-    color: white;
-}
-
-.search * {
-    margin: auto;
-}
-
-.search input {
-    width: 300px;
-    height: 50px;
-    border-radius: 30px 0 0 30px;
-}
-
-.search button {
-    border-radius: 0 30px 30px 0;
-    margin-left: auto;
-    height: 50px;
-    width: 50px;
-}
-
-.menu {
-    background-color: skyblue;
+.logo {
+    width: 20%;
     margin: 0;
     padding: 0;
 }
 
-.menu div>li {
-    list-style-type: none;
-    border-left: 2px solid darkblue;
+.logo img {
+    width: 20%;
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 25%;
 }
 
-.menu div>li:first-child {
-    border: 0px;
+.logo h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    color: #FB773C;
+}
+
+.item {
+    width: 20%;
+}
+
+.item a {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 6%;
+    background-color: #4F1787;
+    color: white;
+}
+
+.item a:hover {
+    background-color: #FB773C;
+    color: #1F316F;
+}
+
+.search-box {
+    width: 20%;
+}
+
+.search-box input {
+    width: 100%;
+}
+
+.login {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+.login ul {
+    list-style-type: none;
+}
+
+.login ul li {
+    display: block;
+    margin: 0;
+}
+
+.login ul li a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.login ul li a:first-child {
+    padding-right: 0.5rem;
+}
+
+.login ul li a:last-child {
+    padding-left: 0.5rem;
+}
+
+.login ul li a:hover {
+    color: #FB773C;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* HEADER */
+
+/* NAV */
+nav {
+    width: 100%;
+}
+
+.menu {
+    background-color: #4F1787;
+    margin: 0;
+    padding: 0;
+}
+
+.groupmenu {
+    width: 75%;
+}
+
+.menu div>li {
+    list-style-type: none;
 }
 
 .menu div>li>a {
+    color: white;
     text-decoration: none;
     padding: 1rem;
     font-size: 1rem;
@@ -167,17 +165,14 @@ header {
 .iimenu>li {
     padding: 10px;
     list-style-type: none;
-    border: 3px dashed yellow;
     border-top: 0px;
     background-color: rgb(48, 48, 48);
 }
 
-.iimenu>li:first-child {
-    border-top: 3px dashed yellow;
-}
 
-.iimenu>li>a {
+.iimenu li a {
     color: white;
+    display: block;
 }
 
 .iimenu {
@@ -187,14 +182,11 @@ header {
     margin: 0;
 }
 
-.iimenu>li:hover a {
-    color: red;
+.iimenu>li:hover {
+    background-color: lightseagreen;
 }
 
-.groupmenu>div>li:first-child {
-    border-left: 2px solid darkblue;
-}
-
+/* NAV */
 
 /* MAIN */
 
@@ -202,7 +194,7 @@ header {
     margin: auto;
     align-items: start;
     justify-content: space-between;
-    width: 80%;
+    width: 75%;
     overflow-x: scroll;
     flex-wrap: nowrap;
 }

@@ -1,14 +1,10 @@
 window.onload = function () {
-    // let dmb = document.querySelectorAll("button.darkmode");
-    // for (db of dmb) {
-    //     db.onclick = function () {
-    //         let bg = document.getElementById("headbg");
-    //         bg.style.background = "linear-gradient(purple, violet)";
-    //     };
-    // }
+    let movies = document.querySelectorAll(".movies");
+    let leftButton = document.querySelector("#left-arrow");
+    let rightButton = document.querySelector("#right-button");
 
-    let leftButton = document.getElementById("left-arrow");
-    leftButton.onclick = function () {
-        console.log("1");
-    };
+
+    rightButton.addEventListener("click", function () {
+        movies.scrollLeft += 900;
+    });
 };

@@ -5,45 +5,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OC - Đặt vé xem phim</title>
-    <script src="script/home.js"></script>
-    <link rel="stylesheet" href="css/home.css" />
+    <script src="./script/home.js"></script>
+    <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="shortcut icon" href="/images/OC-tab-logo.png" />
+    <link rel="shortcut icon" href="./images/OC-tab-logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 
 <body>
-    <header id="headbg" class="flex">
-        <div class="logo-tittle flex">
-            <img src="/images/OC.png" alt="OC-logo" />
-            <div>
-                <h1>OPEN</h1>
-                <h1>CINEMA</h1>
-            </div>
+
+    <header class="flex">
+        <div class="logo flex">
+            <img src="./images/OC.png" alt="Logo">
+            <h1>OPEN CINEMA</h1>
         </div>
-        <div class="order flex">
-            <button><b>ĐẶT VÉ</b><i class="fa-solid fa-ticket"></i></button>
-            <button>
-                <b>ĐẶT BẮP NƯỚC</b><i class="fa-solid fa-bowl-food"></i>
-            </button>
+
+        <div class="item flex">
+            <a href="#">Đặt vé <i class="fa-solid fa-ticket"></i></a>
+            <a href="#">Đặt bắp nước <i class="fa-solid fa-glass-water"></i></a>
         </div>
-        <div class="search flex">
-            <input type="search" placeholder="Tìm kiếm phim..." />
+
+        <div class="search-box flex">
+            <input type="text" placeholder="Tìm tên phim">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="login-darkmode">
-            <button class="login">
-                <b>ĐĂNG NHẬP</b><i class="fa-solid fa-user"></i>
-            </button>
-            <button class="darkmode">
-                <b>DARK MODE</b><i class="fa-solid fa-moon"></i>
-            </button>
+
+        <div class="login">
+            <ul class="flex">
+                <li><a href="#">Đăng nhập</a></li>
+                <li><a href="#">Đăng ký</a></li>
+            </ul>
         </div>
     </header>
 
-
     <nav>
-        <ul class="menu">
+        <ul class="menu flex">
             <div class="flex groupmenu">
                 <li class="imenu">
                     <a href="#"><b>CÁC CỤM RẠP</b></a>
@@ -115,13 +111,8 @@
 
 
     <main>
-        <h2 class="title">PHIM ĐANG CHIẾU</h2>
-        <section class="flex">
-            <div>
-                <button type="button" id="left-arrow">
-                    <i class="fa-solid fa-arrow-left-long"></i>
-                </button>
-            </div>
+        <section>
+            <h2 class="title">PHIM ĐANG CHIẾU</h2>
             <div class="movies flex">
                 <div class="movie">
                     <div>
@@ -184,9 +175,6 @@
                         <h3 class="name">Bẫy (T16)</h3>
                     </div>
                 </div>
-            </div>
-            <div id="right-arrow">
-                <button><i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
         </section>
 
