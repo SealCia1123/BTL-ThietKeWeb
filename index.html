@@ -8,8 +8,8 @@
     <script src="./script/home.js"></script>
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="shortcut icon" href="./images/OC-tab-logo.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="./images/OC.png" />
 </head>
 
 <body>
@@ -26,15 +26,13 @@
         </div>
 
         <div class="search-box flex">
-            <input type="text" placeholder="Tìm tên phim">
+            <input type="text" placeholder="Tìm tên phim...">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
-        <div class="login">
-            <ul class="flex">
-                <li><a href="#">Đăng nhập</a></li>
-                <li><a href="#">Đăng ký</a></li>
-            </ul>
+        <div class="login flex">
+            <a href="#">Đăng nhập</a>
+            <a href="#">Đăng ký</a>
         </div>
     </header>
 
@@ -84,7 +82,7 @@
                     </ul>
                 </li>
                 <li class="imenu">
-                    <a href="#"><b>COMBO BẮP NƯỚC</b></a>
+                    <a href="#"><b>COMBO KHUYẾN MÃI</b></a>
                     <ul class="iimenu">
                         <li>
                             <a href="#"><b>COMBO 2 BẮP 2 NƯỚC - 179K</b></a>
@@ -97,14 +95,80 @@
                         </li>
                     </ul>
                 </li>
-                <div class="flex">
-                    <li class="imenu">
-                        <a href="#"><b>HỖ TRỢ</b></a>
-                    </li>
-                    <li class="imenu">
-                        <a href="#"><b>GIỚI THIỆU</b></a>
-                    </li>
-                </div>
+                <li class="imenu">
+                    <a href="#"><b>QUYỀN LỢI THÀNH VIÊN</b></a>
+                    <ul class="iimenu">
+                        <li class="tvdiamond">
+                            <a href="#"><b>THÀNH VIÊN KIM CƯƠNG</b></a>
+                        </li>
+                        <li class="tvplatinum">
+                            <a href="#"><b>THÀNH VIÊN BẠCH KIM</b></a>
+                        </li>
+                        <li class="tvgold">
+                            <a href="#"><b>THÀNH VIÊN VÀNG</b></a>
+                        </li>
+                        <li class="tvsilver">
+                            <a href="#"><b>THÀNH VIÊN BẠC</b></a>
+                        </li>
+                        <li class="tvbronze">
+                            <a href="#"><b>THÀNH VIÊN ĐỒNG</b></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="imenu">
+                    <a href="#"><b>CHÍNH SÁCH ƯU ĐÃI</b></a>
+                    <ul class="iimenu">
+                        <li>
+                            <a href="#"><b>HỌC SINH-SINH VIÊN</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>TRẺ EM DƯỚI 13T</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>NGƯỜI CAO TUỔI</b></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="imenu">
+                    <a href="#"><b>TUYỂN DỤNG VỊ TRÍ</b></a>
+                    <ul class="iimenu">
+                        <li>
+                            <a href="#"><b>NHÂN VIÊN SẮP XẾP HÀNG HÓA</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>NHÂN VIÊN ORDER THU NGÂN</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>NHÂN VIÊN SOÁT VÉ</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>NHÂN VIÊN PHỤC VỤ</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>NHÂN VIÊN LAO CÔNG</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>NHÂN VIÊN BẢO VỆ</b></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="imenu">
+                    <a href="#"><b>DỊCH VỤ CSKH</b></a>
+                    <ul class="iimenu">
+                        <li>
+                            <a href="#"><b>XỬ LÝ KHIẾU NẠI</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>HỖ TRỢ KỸ THUẬT</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>GIẢI ĐÁP THẮC MẮC</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>CUNG CẤP THÔNG TIN</b></a>
+                        </li>
+                    </ul>
+                </li>
             </div>
         </ul>
     </nav>
@@ -116,90 +180,344 @@
             <div class="movies flex">
                 <div class="movie">
                     <div>
-                        <img src="images/bay.png" alt="Bẫy" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay animate__animated">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
 
                 <div class="movie">
                     <div>
-                        <img src="images/bay.png" alt="Bẫy" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
 
                 <div class="movie">
                     <div>
-                        <img src="images/bay.png" alt="Bẫy" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
 
                 <div class="movie">
                     <div>
-                        <img src="images/bay.png" alt="Bẫy" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
 
                 <div class="movie">
                     <div>
-                        <img src="images/bay.png" alt="Bẫy" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
-                    </div>
-                </div>
-                <div class="movie">
-                    <div>
-                        <img src="images/bay.png" alt="Bẫy" />
-                        <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
 
                 <div class="movie">
                     <div>
-                        <img src="images/bay.png" alt="Bẫy" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
+
                 <div class="movie">
                     <div>
-                        <img src="images/bay.png" alt="Bẫy" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div>
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
+                        <p>Khởi chiếu: 09/08/2024</p>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
             </div>
         </section>
 
-        <h2 class="title">PHIM SẮP CHIẾU</h2>
-        <section class="flex">
+
+        <section>
+            <h2 class="title">PHIM SẮP CHIẾU</h2>
             <div class="movies flex">
                 <div class="movie">
                     <div>
-                        <img src="images/bay.png" alt="Bẫy" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Bẫy (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
+
                 <div class="movie">
                     <div>
-                        <img src="images/chaydua.jpeg" alt="Chạy đua với tử thần" />
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
                         <p>Khởi chiếu: 09/08/2024</p>
-                        <h3 class="name">Chạy đua với tử thần (T16)</h3>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
                     </div>
                 </div>
+
                 <div class="movie">
-                    <div></div>
+                    <div>
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
+                        <p>Khởi chiếu: 09/08/2024</p>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
+                    </div>
                 </div>
+
                 <div class="movie">
-                    <div></div>
+                    <div>
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
+                        <p>Khởi chiếu: 09/08/2024</p>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div>
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
+                        <p>Khởi chiếu: 09/08/2024</p>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div>
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
+                        <p>Khởi chiếu: 09/08/2024</p>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div>
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
+                        <p>Khởi chiếu: 09/08/2024</p>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div>
+                        <div class="hover-img">
+                            <img src="images/bay.png" alt="Bẫy" />
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>Bẫy (T16)</p>
+                                    <br></br>
+                                    <i class="fa-solid fa-tag color-icon"></i> Thể loại: Giật gân
+                                    <br></br>
+                                    <i class="fa-solid fa-clock color-icon"></i> Thời gian: 197'
+                                    <br></br>
+                                    <i class="fa-solid fa-earth-americas color-icon"></i> Quốc gia: Mỹ
+                                </div>
+                            </div>
+                        </div>
+                        <p>Khởi chiếu: 09/08/2024</p>
+                        <h3 class="name"><a href="#">Bẫy (T16)</a></h3>
+                    </div>
                 </div>
             </div>
         </section>

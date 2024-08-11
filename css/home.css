@@ -25,16 +25,15 @@ header {
 }
 
 .logo {
-    width: 20%;
+    width: 15%;
     margin: 0;
     padding: 0;
 }
 
 .logo img {
-    width: 20%;
-    margin: 0;
-    padding: 0.5em;
-    border-radius: 25%;
+    width: 25%;
+    margin: 5px;
+    padding: 5px 0;
 }
 
 .logo h1 {
@@ -45,14 +44,14 @@ header {
 }
 
 .item {
-    width: 20%;
+    width: 25%;
 }
 
 .item a {
     font-size: 1em;
     text-align: center;
-    margin: 0.5em;
-    padding: 1em;
+    margin: 4px;
+    padding: 1rem;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -72,43 +71,36 @@ header {
 }
 
 .search-box input {
-    width: 100%;
+    width: 80%;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    height: 2rem;
+}
+
+.search-box button {
+    width: 10%;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    height: 2rem;
 }
 
 .login {
-    width: 20%;
-    padding: 0;
-    margin: 0;
+    width: 15%;
 }
 
-.login ul {
-    list-style-type: none;
-}
-
-.login ul li {
-    display: block;
-    margin: 0;
-}
-
-.login ul li a {
+.login a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1em;
     margin: 0;
-    padding: 1rem;
+    padding: 0.5em;
     text-decoration: none;
 }
 
-.login ul li a:first-child {
-    padding-right: 0.5rem;
-}
-
-.login ul li a:last-child {
-    padding-left: 0.5rem;
-}
-
-.login ul li a:hover {
-    color: #FB773C;
-    text-decoration: underline;
+.login a:hover {
+    color: #42474a;
+    border: none;
+    border-radius: 8px;
+    background-color: #FB773C;
     font-weight: 500;
 }
 
@@ -126,7 +118,7 @@ nav {
 }
 
 .groupmenu {
-    width: 75%;
+    width: 85%;
 }
 
 .menu div>li {
@@ -142,8 +134,9 @@ nav {
 }
 
 .menu div>li>a:hover {
-    background-color: lightseagreen;
-    color: white;
+    background-color: #FB773C;
+    color: #1F316F;
+    cursor: pointer;
 }
 
 .menu>div {
@@ -156,6 +149,7 @@ nav {
 
 .imenu:hover .iimenu {
     display: block !important;
+    z-index: 99;
 }
 
 .iimenu>li>a {
@@ -183,35 +177,72 @@ nav {
 }
 
 .iimenu>li:hover {
-    background-color: lightseagreen;
+    background: #FB773C;
+}
+
+.iimenu>li:hover>a {
+    background-color: #FB773C;
+    color: #1F316F;
 }
 
 /* NAV */
 
 /* MAIN */
+.color-icon {
+    color: yellow;
+}
 
 .movies {
     margin: auto;
     align-items: start;
     justify-content: space-between;
-    width: 75%;
+    width: 74%;
     overflow-x: scroll;
     flex-wrap: nowrap;
 }
 
-.left-arrow {
-    font-size: 5rem;
-    margin: 0;
-    padding-right: 3rem;
-    cursor: pointer;
+.hover-img {
+    position: relative;
 }
 
-.right-arrow {
-    margin-right: 0;
-    font-size: 2rem;
-    padding-right: 3rem;
-    cursor: pointer;
-    border-radius: 50%;
+@keyframes hoverImgAnimation {
+    0% {
+        bottom: 100%;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.hover-img:hover .overlay {
+    animation: hoverImgAnimation 0.4s;
+    opacity: 1;
+}
+
+.overlay .overlay-text p {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay .overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    text-align: start;
+    font-weight: bold;
 }
 
 .movies::-webkit-scrollbar {
@@ -222,17 +253,23 @@ nav {
     min-width: 25%;
     text-align: center;
     padding: 0.5rem;
-    cursor: pointer;
+    position: relative;
 }
 
-.movies .movie img {
+.movies .movie div img {
     width: 100%;
 }
 
-.movie .name {
+.name a {
     font-size: 1.5rem;
     padding: 0.5rem 0;
     margin: 0;
+    text-decoration: none;
+    color: #d6e3ee;
+}
+
+.name:hover a {
+    color: #FB773C;
 }
 
 .movie p {
@@ -242,8 +279,9 @@ nav {
 
 .title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
+    font-weight: bolder;
     padding: 0.5rem 0;
 }
 
@@ -253,22 +291,22 @@ nav {
 
 footer {
     width: 100%;
-    background: linear-gradient(lightskyblue, lightcyan);
+    background-color: #180161;
 }
 
 .foot {
     font-size: 0.7rem;
-    color: darkblue;
-    width: 50%;
+    width: 60%;
+    justify-content: center;
+}
+
+.foot a {
+    color: yellow;
 }
 
 .foot img {
-    width: 6.5rem;
-    padding: 10px;
-}
-
-.foot {
-    margin: auto;
+    width: 6em;
+    margin: 1em;
 }
 
 /* FOOTER */
