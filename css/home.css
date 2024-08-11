@@ -1,287 +1,287 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	box-sizing: border-box;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 
 body {
-    margin: 0;
-    background: linear-gradient(#180161, #4f1787);
-    color: #d6e3ee;
+	margin: 0;
+	background: linear-gradient(#180161, #4f1787);
+	color: #d6e3ee;
 }
 
 /* HEADER */
 header {
-    background-color: #180161;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+	background-color: #180161;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 .logo {
-    width: 15%;
-    margin: 0;
-    padding: 0;
+	width: 15%;
+	margin: 0;
+	padding: 0;
 }
 
 .logo img {
-    width: 25%;
-    margin: 5px;
-    padding: 5px 0;
+	width: 25%;
+	margin: 5px;
+	padding: 5px 0;
 }
 
 .logo h1 {
-    text-align: center;
-    font-size: 1.5em;
-    padding: 0.5em 0;
-    color: #fb773c;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0.5em 0;
+	color: #fb773c;
 }
 
 .item {
-    width: 25%;
+	width: 25%;
 }
 
 .item a {
-    font-size: 1em;
-    text-align: center;
-    margin: 4px;
-    padding: 1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    background-color: #4f1787;
-    color: white;
+	font-size: 1em;
+	text-align: center;
+	margin: 4px;
+	padding: 1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+	background-color: #4f1787;
+	color: white;
 }
 
 .item a:hover {
-    background-color: #fb773c;
-    color: #1f316f;
+	background-color: #fb773c;
+	color: #1f316f;
 }
 
 .search-box {
-    width: 20%;
+	width: 20%;
 }
 
 .search-box input {
-    width: 80%;
-    border: none;
-    border-radius: 30px 0 0 30px;
-    height: 2rem;
+	width: 80%;
+	border: none;
+	border-radius: 30px 0 0 30px;
+	height: 2rem;
 }
 
 .search-box button {
-    width: 10%;
-    border: none;
-    border-radius: 0 30px 30px 0;
-    height: 2rem;
+	width: 10%;
+	border: none;
+	border-radius: 0 30px 30px 0;
+	height: 2rem;
 }
 
 .login {
-    width: 15%;
+	width: 15%;
 }
 
 .login a {
-    color: white;
-    font-size: 1.1em;
-    margin: 0;
-    padding: 0.5em;
-    text-decoration: none;
+	color: white;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 0.5em;
+	text-decoration: none;
 }
 
 .login a:hover {
-    color: #42474a;
-    border: none;
-    border-radius: 8px;
-    background-color: #fb773c;
-    font-weight: 500;
+	color: #42474a;
+	border: none;
+	border-radius: 8px;
+	background-color: #fb773c;
+	font-weight: 500;
 }
 
 /* HEADER */
 
 /* NAV */
 nav {
-    width: 100%;
+	width: 100%;
 }
 
 .menu {
-    background-color: #4f1787;
-    margin: 0;
-    padding: 0;
+	background-color: #4f1787;
+	margin: 0;
+	padding: 0;
 }
 
 .groupmenu {
-    width: 85%;
+	width: 85%;
 }
 
 .menu div > li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .menu div > li > a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-    font-size: 1rem;
-    display: block;
+	color: white;
+	text-decoration: none;
+	padding: 1rem;
+	font-size: 1rem;
+	display: block;
 }
 
 .menu div > li > a:hover {
-    background-color: #fb773c;
-    color: #1f316f;
-    cursor: pointer;
+	background-color: #fb773c;
+	color: #1f316f;
+	cursor: pointer;
 }
 
 .menu > div {
-    margin: auto;
+	margin: auto;
 }
 
 .groupmenu > div {
-    margin-left: auto;
+	margin-left: auto;
 }
 
 .imenu:hover .iimenu {
-    display: block !important;
-    z-index: 99;
+	display: block !important;
+	z-index: 99;
 }
 
 .iimenu > li > a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .iimenu > li {
-    padding: 10px;
-    list-style-type: none;
-    border-top: 0px;
-    background-color: rgb(48, 48, 48);
+	padding: 10px;
+	list-style-type: none;
+	border-top: 0px;
+	background-color: rgb(48, 48, 48);
 }
 
 .iimenu li a {
-    color: white;
-    display: block;
+	color: white;
+	display: block;
 }
 
 .iimenu {
-    position: absolute;
-    display: none !important;
-    padding: 0;
-    margin: 0;
+	position: absolute;
+	display: none !important;
+	padding: 0;
+	margin: 0;
 }
 
 .iimenu > li:hover {
-    background: #fb773c;
+	background: #fb773c;
 }
 
 .iimenu > li:hover > a {
-    background-color: #fb773c;
-    color: #1f316f;
+	background-color: #fb773c;
+	color: #1f316f;
 }
 
 /* NAV */
 
 /* MAIN */
 .color-icon {
-    color: yellow;
+	color: yellow;
 }
 
 .movies {
-    margin: auto;
-    align-items: start;
-    justify-content: space-between;
-    width: 74%;
-    overflow-x: scroll;
-    flex-wrap: nowrap;
+	margin: auto;
+	align-items: start;
+	justify-content: space-between;
+	width: 74%;
+	overflow-x: scroll;
+	flex-wrap: nowrap;
 }
 
 .hover-img {
-    position: relative;
+	position: relative;
 }
 
 @keyframes hoverImgAnimation {
-    0% {
-        bottom: 100%;
-    }
+	0% {
+		bottom: 100%;
+	}
 
-    100% {
-        bottom: 0%;
-    }
+	100% {
+		bottom: 0%;
+	}
 }
 
 .overlay {
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
 }
 
 .hover-img:hover .overlay {
-    /* animation: hoverImgAnimation 0.4s; */
-    opacity: 1;
+	/* animation: hoverImgAnimation 0.4s; */
+	opacity: 1;
 }
 
 .overlay .overlay-text p {
-    font-weight: bolder;
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0;
+	font-weight: bolder;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
 }
 
 .overlay .overlay-text {
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    text-align: start;
-    font-weight: bold;
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	text-align: start;
+	font-weight: bold;
 }
 
 .movies::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 .movies .movie {
-    min-width: 25%;
-    text-align: center;
-    padding: 0.5rem;
-    position: relative;
+	min-width: 25%;
+	text-align: center;
+	padding: 0.5rem;
+	position: relative;
 }
 
 .movies .movie div img {
-    width: 100%;
+	width: 100%;
 }
 
 .name a {
-    font-size: 1.5rem;
-    padding: 0.5rem 0;
-    margin: 0;
-    text-decoration: none;
-    color: #d6e3ee;
+	font-size: 1.5rem;
+	padding: 0.5rem 0;
+	margin: 0;
+	text-decoration: none;
+	color: #d6e3ee;
 }
 
 .name:hover a {
-    color: #fb773c;
+	color: #fb773c;
 }
 
 .movie p {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .title {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bolder;
-    padding: 0.5rem 0;
+	text-align: center;
+	font-size: 2rem;
+	margin: 0;
+	font-weight: bolder;
+	padding: 0.5rem 0;
 }
 
 /* MAIN */
@@ -289,23 +289,23 @@ nav {
 /*FOOTER*/
 
 footer {
-    width: 100%;
-    background-color: #180161;
+	width: 100%;
+	background-color: #180161;
 }
 
 .foot {
-    font-size: 0.7rem;
-    width: 60%;
-    justify-content: center;
+	font-size: 0.7rem;
+	width: 60%;
+	justify-content: center;
 }
 
 .foot a {
-    color: yellow;
+	color: yellow;
 }
 
 .foot img {
-    width: 6em;
-    margin: 1em;
+	width: 6em;
+	margin: 1em;
 }
 
 /* FOOTER */
