@@ -121,11 +121,11 @@ nav {
 	width: 85%;
 }
 
-.menu div > li {
+.menu div>li {
 	list-style-type: none;
 }
 
-.menu div > li > a {
+.menu div>li>a {
 	color: white;
 	text-decoration: none;
 	padding: 1rem;
@@ -133,17 +133,17 @@ nav {
 	display: block;
 }
 
-.menu div > li > a:hover {
+.menu div>li>a:hover {
 	background-color: #fb773c;
 	color: #1f316f;
 	cursor: pointer;
 }
 
-.menu > div {
+.menu>div {
 	margin: auto;
 }
 
-.groupmenu > div {
+.groupmenu>div {
 	margin-left: auto;
 }
 
@@ -152,11 +152,11 @@ nav {
 	z-index: 99;
 }
 
-.iimenu > li > a {
+.iimenu>li>a {
 	text-decoration: none;
 }
 
-.iimenu > li {
+.iimenu>li {
 	padding: 10px;
 	list-style-type: none;
 	border-top: 0px;
@@ -175,11 +175,11 @@ nav {
 	margin: 0;
 }
 
-.iimenu > li:hover {
+.iimenu>li:hover {
 	background: #fb773c;
 }
 
-.iimenu > li:hover > a {
+.iimenu>li:hover>a {
 	background-color: #fb773c;
 	color: #1f316f;
 }
@@ -225,8 +225,9 @@ nav {
 }
 
 .hover-img:hover .overlay {
-	/* animation: hoverImgAnimation 0.4s; */
+	animation: hoverImgAnimation 0.5s ease;
 	opacity: 1;
+	color: #d6e3ee;
 }
 
 .overlay .overlay-text p {
