@@ -1,4 +1,5 @@
 window.onload = function () {
+    let movies = document.querySelectorAll('.movie');
     let horizontalZone = document.querySelectorAll('.movies');
     for (let h of horizontalZone) {
         h.addEventListener('wheel', function (e) {
