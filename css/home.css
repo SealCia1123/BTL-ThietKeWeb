@@ -244,7 +244,7 @@ nav {
     margin: 0;
     padding: 0 1rem 0.5rem 0;
 }
-.overlay .overlay-text p{
+.overlay .overlay-text p {
     font-size: 1rem;
     font-weight: normal;
     margin: 0;
@@ -258,7 +258,6 @@ nav {
     text-align: start;
     font-weight: bold;
 }
-
 
 .movies .movie {
     min-width: 24%;
