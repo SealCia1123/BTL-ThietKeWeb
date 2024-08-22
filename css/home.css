@@ -190,6 +190,53 @@ nav {
     color: yellow;
 }
 
+.slideshow-container {
+    overflow: hidden;
+    width: 66.6%;
+    padding: 1rem 0 0;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.km-banner {
+    width: 70%;
+    margin: auto;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.poster-km > div {
+    margin: 0;
+    padding: 0 0.5rem 1rem;
+    width: 33.3%;
+}
+
+.poster-km img {
+    width: 100%;
+    border: 2px solid #fb773c;
+}
+
 .movies {
     margin: auto;
     align-items: start;
