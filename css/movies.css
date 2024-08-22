@@ -6,6 +6,7 @@
 .flex {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
@@ -66,7 +67,7 @@ header {
 }
 
 .search-box {
-    width: 15%;
+    width: 20%;
 }
 
 .search-box input {
@@ -186,114 +187,156 @@ nav {
 /* NAV */
 
 /* MAIN */
+
 .color-icon {
     color: yellow;
 }
 
-.movies {
+.top {
     margin: auto;
     align-items: start;
-    justify-content: space-between;
-    width: 74%;
-    overflow-x: auto;
-    flex-wrap: nowrap;
+    width: 70%;
 }
 
-.movies::-webkit-scrollbar {
-    display: none;
+.top-left {
+    width: 40%;
+    margin: 0;
+    padding: 2rem 1rem;
 }
 
-.movie a {
+.top-left img {
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.top-right {
+    width: 60%;
+    margin: 0;
+    padding: 1rem;
+}
+
+.top-right h2 {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+.top-right ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.top-right ul li {
+    margin: 0;
+    padding: 0 0 0.3rem;
+}
+
+.top-right ul li i:after{
+    content: "\00a0\00a0";
+}
+
+.top-right p {
     margin: 0;
     padding: 0;
 }
 
-.hover-img {
-    position: relative;
-}
-
-@keyframes hoverImgAnimation {
-    0% {
-        bottom: 100%;
-    }
-
-    100% {
-        bottom: 0%;
-    }
-}
-
-.overlay {
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-.hover-img:hover .overlay {
-    animation: hoverImgAnimation 0.5s ease;
-    opacity: 1;
-    color: #d6e3ee;
-}
-
-.overlay .overlay-text p:first-child {
-    font-weight: bolder;
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 0 1rem 0.5rem 0;
-}
-.overlay .overlay-text p{
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 0;
-    padding: 0 0 0.5rem;
-}
-
-.overlay .overlay-text {
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    text-align: start;
+.order-trailer a {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1rem;
+    margin-left: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
     font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #fb773c;
+    color: white;
+    width: 100%;
 }
 
+.order-trailer a:hover {
+    color: #1f316f;
+    text-decoration: underline;
+}
 
-.movies .movie {
-    min-width: 24%;
+.information h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.information h3 {
+    color: yellow;
+}
+
+.bottom {
+    width: 100%;
+}
+
+.bottom h2 {
+    font-size: 2rem;
+}
+
+.movie-date {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.date a {
+    font-size: 1em;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid gold;
+    border-radius: 8px;
+    color: gold;
+}
+
+.date a:hover {
+    background: gold;
+    color: #180161;
+}
+
+.cinema-locate {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.detail-location {
+    background-color: #180161;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.detail-location h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.time a {
+    font-size: 1em;
     text-align: center;
     padding: 0.5rem;
-    position: relative;
-}
-
-.movies .movie div img {
-    width: 100%;
-}
-
-.name a {
-    font-size: 1.3rem;
-    padding: 0;
-    margin: 0;
+    text-transform: uppercase;
     text-decoration: none;
-    color: #d6e3ee;
+    font-weight: bold;
+    background: #1f316f;
+    border-radius: 8px;
+    color: white;
 }
 
-.name:hover a {
-    color: #fb773c;
-}
-
-.movie p {
-    margin: 0;
-    padding: 0;
-}
-
-.title {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bolder;
-    padding: 0.5rem 0;
+.time a:hover {
+    background-color: #fb773c;
+    color: #180161;
 }
 
 /* MAIN */
