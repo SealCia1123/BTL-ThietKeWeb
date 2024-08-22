@@ -231,8 +231,8 @@ nav {
     padding: 0 0 0.3rem;
 }
 
-.top-right ul li i:after{
-    content: "\00a0\00a0";
+.top-right ul li i:after {
+    content: '\00a0\00a0';
 }
 
 .top-right p {
@@ -272,7 +272,8 @@ nav {
 }
 
 .bottom {
-    width: 100%;
+    width: 75%;
+    margin: auto;
 }
 
 .bottom h2 {
@@ -281,11 +282,11 @@ nav {
 
 .movie-date {
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
-.date a {
+.box a {
     font-size: 1em;
     text-align: center;
     margin: 0.5rem;
@@ -298,7 +299,7 @@ nav {
     color: gold;
 }
 
-.date a:hover {
+.box a:hover {
     background: gold;
     color: #180161;
 }
@@ -320,12 +321,19 @@ nav {
 .detail-location h3 {
     font-size: 1.5rem;
     margin: 0;
+    padding: 0;
+}
+
+.detail-location p {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .time a {
-    font-size: 1em;
+    font-size: 1.2rem;
     text-align: center;
     padding: 0.5rem;
+    margin: 0.3rem 0.3rem;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -362,5 +370,4 @@ footer {
     width: 6em;
     margin: 1em;
 }
-
 /* FOOTER */
