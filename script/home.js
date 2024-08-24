@@ -5,7 +5,7 @@ window.onload = function () {
         h.addEventListener('wheel', function (e) {
             e.preventDefault();
             h.scrollBy({
-                left: e.deltaY < 0 ? -70 : 70,
+                left: e.deltaY < 0 ? -40 : 40,
             });
         });
     }
