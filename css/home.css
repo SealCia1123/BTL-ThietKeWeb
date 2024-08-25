@@ -230,7 +230,6 @@ nav {
     width: 70%;
     margin: auto;
     padding: 0;
-    font-size: 1rem;
 }
 
 .poster-km > div {
@@ -241,7 +240,7 @@ nav {
 
 .poster-km img {
     width: 100%;
-    border: 2px solid #fb773c;
+    border-radius: 8px;
 }
 
 .movies {
@@ -320,8 +319,15 @@ nav {
     position: relative;
 }
 
-.movies .movie div img {
+.movie img {
     width: 100%;
+    border-radius: 7px;
+    border: 1px solid #808080;
+}
+
+.name {
+    margin: 0;
+    padding: 0.5rem 1rem 0;
 }
 
 .name a {

@@ -195,28 +195,30 @@ nav {
     display: flex;
 }
 
-.ages > * {
-    margin: 0 auto;
-    padding: 2rem;
+.ages div {
+    margin: auto;
+    padding: 0;
 }
 
 .ages h1 {
-    color: gold;
+    color: #f9e400;
 }
 
-.ages h4 {
-    color: aqua;
+.ages h2 {
+    color: #af47d2;
 }
 
-.ages-img > div {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 2rem 2rem 2rem;
+.discount-type > li {
+    list-style-type: none;
+}
+
+.ages-img {
+    width: 70%;
+    margin: auto;
 }
 
 .ages-img img {
     width: 100%;
-    border: 2px solid #fb773c;
     border-radius: 10px;
 }
 
