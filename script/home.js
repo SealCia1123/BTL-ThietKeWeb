@@ -3,31 +3,41 @@ window.onload = function () {
     const movies = document.querySelectorAll('.movie');
     const movieNames = document.querySelectorAll('.name a');
     let search = document.querySelector('#search');
-    const searchButton = document.querySelector('#search-button');
-    let userInput = search.value;
 
-    search.addEventListener('keyup', () => {
-        userInput = search.value;
-        console.log(userInput);
-    });
+    function displayMovies(e) {
+        for (let movie of movies) {
+            movie.setAttribute('style', 'display: none;');
+        }
+        for (let i = 0; i < e.length; i++) {
+            e[i].setAttribute('style', 'display: block;');
+        }
+    }
 
-    searchButton.addEventListener('click', function () {
-        // Xu ly chuoi nguoi dung nhap
-        userInput = new String(userInput);
+    function clearSearch() {
+        for (let movie of movies) {
+            movie.setAttribute('style', 'display: block;');
+        }
+    }
+
+    search.addEventListener('search', function () {
+        // Xử lý chuỗi nhập vào
+        let userInput = new String(this.value);
         userInput = userInput.toUpperCase();
-        // Kiem tra chuoi
-        if (userInput === '') alert('Vui lòng nhập tên phim!');
+        // Xử lý bấm nút clear
+        if (this.value === '') clearSearch();
+        // KT phim và đưa vào mảng các phim tìm thấy, những phim không có trong mảng sẽ ẩn đi
+        // Nếu mảng phim tìm thấy rỗng thì thông báo
         else {
-            for (let name of movieNames) {
-                let stringName = new String(name.innerText);
+            let index = 0;
+            let foundMovies = [];
+            for (let i = 0; i < movieNames.length; i++) {
+                let stringName = new String(movieNames[i].innerText);
                 stringName = stringName.replace(/ *\([^)]*\) */g, '');
-                // Xu ly tim thay
-                if (stringName.includes(userInput)) {
-                    alert('tim thay');
-                    return;
-                }
+                if (stringName.includes(userInput))
+                    foundMovies[index++] = movies[i];
             }
-            alert('Khong tim thay');
+            if (foundMovies.length === 0) alert('Khong tim thay phim');
+            else displayMovies(foundMovies);
         }
     });
 
@@ -44,7 +54,6 @@ window.onload = function () {
 
     // Slideshow ảnh bìa
     let slideIndex = 0;
-    showSlides();
     function showSlides() {
         let slides = document.querySelectorAll('.slides');
         for (let i = 0; i < slides.length; i++) {
@@ -57,4 +66,5 @@ window.onload = function () {
         slides[slideIndex - 1].style.display = 'block';
         setTimeout(showSlides, 4000);
     }
+    showSlides();
 };
