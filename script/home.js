@@ -1,4 +1,14 @@
 window.onload = function () {
+    // Gan link phim
+    const imgLink = document.querySelectorAll('.movie>div>a');
+    const titleLink = document.querySelectorAll('.movie>div>h3>a');
+    let moviesIndex = 0;
+    for (let i = 0; i < imgLink.length; i++) {
+        ++moviesIndex;
+        console.log(moviesIndex);
+        imgLink[i].setAttribute('href', `./pages/movie${moviesIndex}.html`);
+        titleLink[i].setAttribute('href', `./pages/movie${moviesIndex}.html`);
+    }
     // Tìm kiếm phim
     const movies = document.querySelectorAll('.movie');
     const movieNames = document.querySelectorAll('.name a');
