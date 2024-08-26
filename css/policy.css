@@ -11,16 +11,22 @@
 
 body {
     margin: 0;
-    background: linear-gradient(#180161, #4f1787);
+    background: linear-gradient(#180161, #4f1787, #180161);
     color: #d6e3ee;
+    width: 100%;
 }
 
 /* HEADER */
 header {
     background-color: #180161;
     width: 100%;
-    padding: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
     margin: 0;
+    padding: 0;
+    z-index: 99;
 }
 
 .logo {
@@ -112,6 +118,14 @@ header {
 /* NAV */
 nav {
     width: 100%;
+    position: fixed;
+    top: 91px;
+    left: 0;
+    overflow: hidden;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    max-width: inherit;
 }
 
 .menu {
@@ -191,29 +205,71 @@ nav {
 
 /* MAIN */
 
-.ages {
-    display: flex;
+main {
+    margin-top: 142px;
 }
 
-.ages div {
+.ages {
+    width: 70%;
     margin: auto;
-    padding: 0;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+}
+
+.ages > div {
+    width: 45%;
+    background-color: #af69ef;
+    color: #06080f;
+    padding: 1rem 0.5rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.ages > div:last-child {
+    background-color: #b36d08;
+}
+
+.ages > div:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
 }
 
 .ages h1 {
-    color: #f9e400;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0;
+    padding: 1rem 1rem 0;
 }
 
-.ages h2 {
-    color: #af47d2;
+.discount-type {
+    margin: 0;
+    padding: 0.5rem 2rem;
 }
 
 .discount-type > li {
     list-style-type: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.discount-type > li > h2 {
+    margin: 0;
+    padding: 0;
+}
+.discount-type > li > ul li {
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+.ages > div > p {
+    margin: 0;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .ages-img {
-    width: 70%;
+    width: 65%;
     margin: auto;
 }
 
@@ -227,6 +283,7 @@ nav {
 /*FOOTER*/
 
 footer {
+    margin-top: 3rem;
     width: 100%;
     background-color: #180161;
 }
