@@ -163,43 +163,6 @@ nav {
     margin-left: auto;
 }
 
-.imenu:hover .iimenu {
-    display: block !important;
-    z-index: 99;
-}
-
-.iimenu > li > a {
-    text-decoration: none;
-}
-
-.iimenu > li {
-    padding: 10px;
-    list-style-type: none;
-    border-top: 0px;
-    background-color: rgb(48, 48, 48);
-}
-
-.iimenu li a {
-    color: white;
-    display: block;
-}
-
-.iimenu {
-    position: absolute;
-    display: none !important;
-    padding: 0;
-    margin: 0;
-}
-
-.iimenu > li:hover {
-    background: #fb773c;
-}
-
-.iimenu > li:hover > a {
-    background-color: #fb773c;
-    color: #1f316f;
-}
-
 /* NAV */
 
 /* MAIN */
@@ -216,10 +179,22 @@ main > h1 {
     padding-top: 1rem;
 }
 
-section {
-    width: 60%;
+.members {
+    width: 70%;
+    flex-wrap: wrap;
     margin: auto;
+    flex: 0.2;
+}
+
+.member {
+    margin: 1rem 2rem;
     padding: 1rem;
+    border-radius: 10px;
+}
+
+.member:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 #bronze {
@@ -246,37 +221,39 @@ section {
     color: #06080f;
 }
 
-section > div {
-    margin: 0;
-    padding: 0;
-    border-radius: 5px;
-}
-
-section > div h2 {
+.member h2 {
     font-size: 2rem;
     margin: 0;
     padding: 1rem 1.5rem 0;
 }
 
-section > div ul {
-    list-style-type: none;
+.member > div ul {
+    list-style-type: circle;
     margin: 0;
     padding: 0.5rem 3rem;
 }
 
-section > div ul li {
+.member > div ul li {
     font-weight: 500;
     margin: 0;
     padding: 0;
 }
-section > div p {
+
+.member > div p {
     margin: 0;
     padding: 0 1.5rem 1rem;
     font-size: 1.5rem;
 }
 
+section:last-child {
+    width: 60%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
 section img {
     width: 100%;
+    border-radius: 10px;
 }
 /* MAIN */
 
