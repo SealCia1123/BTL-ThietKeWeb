@@ -154,7 +154,6 @@ nav {
     z-index: 99;
     margin: 0;
     padding: 0;
-    max-width: inherit;
     background-color: #4f1787;
 }
 
@@ -203,7 +202,7 @@ nav {
 /* MAIN */
 
 main {
-    margin-top: 142px;
+    margin-top: 135px;
 }
 
 .color-icon {

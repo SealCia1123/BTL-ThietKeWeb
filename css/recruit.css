@@ -35,6 +35,10 @@ header {
     padding: 0;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 .logo img {
     width: 25%;
     margin: 5px;
@@ -125,7 +129,6 @@ nav {
     z-index: 99;
     margin: 0;
     padding: 0;
-    max-width: inherit;
 }
 
 .menu {
@@ -183,23 +186,8 @@ main {
     color: gold;
     background-color: #4f1787;
     border-radius: 10px;
+    border: 1px solid gray;
     padding: 1rem;
-}
-
-.staff12,
-.staff34,
-.staff56 {
-    display: flex;
-}
-
-.staff12 > div,
-.staff34 > div,
-.staff56 > div {
-    width: 50%;
-    padding: 2rem;
-    margin: 1rem;
-    background-color: #4f1787;
-    border-radius: 10px;
 }
 
 .register-form {
