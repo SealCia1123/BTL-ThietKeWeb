@@ -138,11 +138,11 @@ nav {
     width: 85%;
 }
 
-.menu div > li {
+.menu div>li {
     list-style-type: none;
 }
 
-.menu div > li > a {
+.menu div>li>a {
     color: white;
     text-decoration: none;
     padding: 1rem;
@@ -150,17 +150,17 @@ nav {
     display: block;
 }
 
-.menu div > li > a:hover {
+.menu div>li>a:hover {
     background-color: #fb773c;
     color: #1f316f;
     cursor: pointer;
 }
 
-.menu > div {
+.menu>div {
     margin: auto;
 }
 
-.groupmenu > div {
+.groupmenu>div {
     margin-left: auto;
 }
 
@@ -173,13 +173,13 @@ main {
 }
 
 .ages {
-    width: 70%;
+    width: 90%;
     margin: auto;
     justify-content: space-around;
     padding: 2rem 1rem;
 }
 
-.ages > div {
+.ages>div {
     width: 45%;
     background-color: #af69ef;
     color: #06080f;
@@ -188,11 +188,11 @@ main {
     border-radius: 10px;
 }
 
-.ages > div:last-child {
+.ages>div:last-child {
     background-color: #b36d08;
 }
 
-.ages > div:hover {
+.ages>div:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
 }
@@ -209,22 +209,23 @@ main {
     padding: 0.5rem 2rem;
 }
 
-.discount-type > li {
+.discount-type>li {
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 0;
 }
 
-.discount-type > li > h2 {
+.discount-type>li>h2 {
     margin: 0;
     padding: 0;
 }
-.discount-type > li > ul li {
+
+.discount-type>li>ul li {
     margin: 0;
     padding-top: 0.5rem;
 }
 
-.ages > div > p {
+.ages>div>p {
     margin: 0;
     padding: 1rem 2rem;
     font-size: 1.2rem;
@@ -267,3 +268,24 @@ footer {
 }
 
 /* FOOTER */
+
+
+/* RESPONSIVE */
+
+/* Mobile & Tablet (dưới 1200px) */
+@media (max-width: 1200px) {
+    section {
+        display: block !important;
+    }
+
+    .ages>div {
+        margin: 2rem auto;
+        width: 100%;
+    }
+
+    .ages-img {
+        width: 90%;
+    }
+}
+
+/* RESPONSIVE */

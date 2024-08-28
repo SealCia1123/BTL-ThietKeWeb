@@ -38,6 +38,7 @@ header {
 .logo a {
     text-decoration: none;
 }
+
 .logo img {
     width: 25%;
     margin: 5px;
@@ -190,6 +191,7 @@ main > h1 {
     margin: 1rem 2rem;
     padding: 1rem;
     border-radius: 10px;
+    width: 40%;
 }
 
 .member:hover {
@@ -255,6 +257,7 @@ section img {
     width: 100%;
     border-radius: 10px;
 }
+
 /* MAIN */
 
 /*FOOTER*/
@@ -281,3 +284,46 @@ footer {
 }
 
 /* FOOTER */
+
+/* RESPONSIVE */
+/* Mobile */
+
+@media (max-width: 830px) {
+    section {
+        width: 100% !important;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .members {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .member {
+        width: 70% !important;
+    }
+}
+
+/*  Tablet */
+@media (max-width: 1200px) {
+    section {
+        width: 100% !important;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .members {
+        width: 100%;
+    }
+
+    .member {
+        width: 40%;
+    }
+}
+
+/* RESPONSIVE */

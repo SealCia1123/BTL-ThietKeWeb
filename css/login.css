@@ -255,17 +255,20 @@ input#save-info {
 }
 
 .input-box button {
+    display: block;
     padding: 0;
-    right: 0;
+    margin: 0;
+    margin-left: auto;
     cursor: pointer;
     background-color: transparent;
     border: none;
     color: #d6e3ee;
+    font-size: 1.3rem;
 }
 
 .comfirm button {
     width: 400px;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     font-size: 1.3rem;
     border: none;
     border-radius: 5px;
@@ -280,7 +283,7 @@ input#save-info {
 /*FOOTER*/
 
 footer {
-    margin-top: 10rem;
+    margin-top: 15rem;
     background-color: #180161;
     width: 100%;
 }

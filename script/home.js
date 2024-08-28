@@ -1,11 +1,24 @@
 window.onload = function () {
+    // Xu ly nut show nav
+    let showNavButton = document.querySelector('#show-button');
+    showNavButton.addEventListener('click', function () {
+        document
+            .querySelector('.nav-mobile .nav-mobile-container')
+            .classList.toggle('show');
+    });
+    let closeNavButton = document.querySelector('#close-nav-mobile');
+    closeNavButton.addEventListener('click', function () {
+        document
+            .querySelector('.nav-mobile .nav-mobile-container')
+            .classList.toggle('show');
+    });
+
     // Gan link phim
     const imgLink = document.querySelectorAll('.movie>div>a');
     const titleLink = document.querySelectorAll('.movie>div>h3>a');
     let moviesIndex = 0;
     for (let i = 0; i < imgLink.length; i++) {
         ++moviesIndex;
-        console.log(moviesIndex);
         imgLink[i].setAttribute('href', `./pages/movie${moviesIndex}.html`);
         titleLink[i].setAttribute('href', `./pages/movie${moviesIndex}.html`);
     }

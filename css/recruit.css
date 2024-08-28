@@ -242,3 +242,20 @@ footer {
 }
 
 /* FOOTER */
+
+/* RESPONSIVE */
+
+/* Mobile (dưới 768px) */
+@media (max-width: 768px) {
+    section {
+        width: 100% !important;
+    }
+
+    .hotline a,
+    .email a {
+        display: block;
+        padding: 1rem;
+    }
+}
+
+/* RESPONSIVE */

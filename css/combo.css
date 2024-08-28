@@ -239,6 +239,7 @@ section h1 {
 .detail ul li {
     list-style-type: none;
 }
+
 .detail ul li p {
     font-size: 1.2rem;
     font-weight: 600;
@@ -273,3 +274,37 @@ footer {
 }
 
 /* FOOTER */
+
+/* RESPONSIVE */
+
+/* Mobile */
+
+@media only screen and (max-width: 850px) {
+    .combos {
+        display: block;
+    }
+
+    .combo {
+        margin: 1rem auto;
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1500px) {
+    section {
+        width: 100%;
+    }
+    .combo h2 {
+        font-size: 1.3rem;
+    }
+    .combo ul li p {
+        font-size: 0.8rem;
+    }
+}
+
+/* RESPONSIVE */
