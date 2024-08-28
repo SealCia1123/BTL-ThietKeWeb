@@ -37,7 +37,6 @@
 
             <div class="login flex">
                 <a href="./login.html">Đăng nhập</a>
-                <a href="./login.html">Đăng ký</a>
             </div>
         </div>
     </header>
@@ -73,81 +72,29 @@
     </nav>
 
     <main>
-        <section id="login-section">
-            <div class="login-form">
-                <h1>Đăng nhập</h1>
+        <section>
+            <div class="login-section">
                 <form action="#">
+                    <h1 class="title">Đăng nhập</h1>
                     <div class="input-box">
-                        <p class="info">Email hoặc tên đăng nhập</p>
+                        <p class="info">Email hoặc tên tài khoản <i class="fa-solid fa-user"></i></p>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-box">
+                        <p class="info">Mật khẩu <i class="fa-solid fa-lock"></i></p>
+                        <input type="password" required>
+                    </div>
+                    <div class="input-box remember">
                         <div class="flex">
-                            <input type="email" required><i class="fa-solid fa-user"></i>
+                            <input type="checkbox" name="save-info" id="save-info">
+                            <label for="save-info">Lưu thông tin đăng nhập</label>
                         </div>
                     </div>
                     <div class="input-box">
-                        <p class="info">Mật khẩu</p>
-                        <div class="flex">
-                            <input type="password" required><i class="fa-solid fa-lock"></i>
-                        </div>
-                    </div>
-                    <div class="save-info flex">
-                        <input type="checkbox">Lưu thông tin đăng nhập
-                        <a href="#">Quên mật khẩu</a>
-                    </div>
-                    <div class="comfirm-button">
-                        <button>Đăng nhập</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section id="register-section">
-            <div class="login-form">
-                <h1>Đăng ký</h1>
-                <form action="#">
-                    <div class="input-box">
-                        <p class="info">Họ tên</p>
-                        <div class="flex">
-                            <input type="email" required>
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <p class="info">Ngày sinh</p>
-                        <div class="flex">
-                            <input type="date" required>
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <p class="info">Số điện thoại</p>
-                        <div class="flex">
-                            <input type="number" required>
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <p class="info">Tên đăng nhập</p>
-                        <div class="flex">
-                            <input type="number" required>
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <p class="info">Email</p>
-                        <div class="flex">
-                            <input type="email" required>
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <p class="info">Mật khẩu</p>
-                        <div class="flex">
-                            <input type="password" required>
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <p class="info">Xác thực mật khẩu</p>
-                        <div class="flex">
-                            <input type="password" required>
-                        </div>
-                    </div>
-                    <div class="comfirm-button">
                         <button>Đăng ký</button>
+                    </div>
+                    <div class="comfirm">
+                        <button>Đăng nhập</button>
                     </div>
                 </form>
             </div>
