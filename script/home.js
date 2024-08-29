@@ -1,19 +1,15 @@
 window.onload = function () {
-    // Xu ly nut show nav
-    let showNavButton = document.querySelector('#show-button');
-    showNavButton.addEventListener('click', function () {
-        document
-            .querySelector('.nav-mobile .nav-mobile-container')
-            .classList.toggle('show');
+    // Chuyển hướng đăng nhập hoặc đăng ký riêng cho index.html
+    const loginButton = document.querySelector('.login>a:first-child');
+    const registerButton = document.querySelector('.login>a:last-child');
+    loginButton.addEventListener('click', function () {
+        window.location.href = './pages/login.html#tab1';
     });
-    let closeNavButton = document.querySelector('#close-nav-mobile');
-    closeNavButton.addEventListener('click', function () {
-        document
-            .querySelector('.nav-mobile .nav-mobile-container')
-            .classList.toggle('show');
+    registerButton.addEventListener('click', function () {
+        window.location.href = './pages/login.html#tab2';
     });
 
-    // Gan link phim
+    // Gắn link phim
     const imgLink = document.querySelectorAll('.movie>div>a');
     const titleLink = document.querySelectorAll('.movie>div>h3>a');
     let moviesIndex = 0;
@@ -22,6 +18,7 @@ window.onload = function () {
         imgLink[i].setAttribute('href', `./pages/movie${moviesIndex}.html`);
         titleLink[i].setAttribute('href', `./pages/movie${moviesIndex}.html`);
     }
+
     // Tìm kiếm phim
     const movies = document.querySelectorAll('.movie');
     const movieNames = document.querySelectorAll('.name a');
@@ -67,8 +64,8 @@ window.onload = function () {
     // Lướt vùng phim theo chiều ngang
     let horizontalZone = document.querySelectorAll('.movies');
     for (let h of horizontalZone) {
-        h.addEventListener('wheel', function (e) {
-            e.preventDefault();
+        h.addEventListener('wheel', function (event) {
+            event.preventDefault();
             h.scrollBy({
                 left: e.deltaY < 0 ? -40 : 40,
             });

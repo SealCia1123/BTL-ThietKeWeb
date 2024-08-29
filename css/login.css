@@ -15,6 +15,9 @@ body {
     color: #d6e3ee;
     width: 100%;
 }
+body.modal-open {
+    overflow: hidden;
+}
 
 /* HEADER */
 header {
@@ -205,9 +208,13 @@ main {
     margin-top: 160px;
 }
 
-section {
+.active {
+    display: block !important;
+}
+
+section.container {
     width: 500px;
-    height: 500px;
+    height: auto;
     background-color: #6420aa;
     padding: 0;
     border: 1px solid gray;
@@ -215,24 +222,65 @@ section {
     margin: auto;
 }
 
+/* Phần ul tab */
+.tab {
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+}
+.tab li {
+    width: 50%;
+    text-align: center;
+}
+
+.tab li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #d6e3ee;
+    font-size: 1.5rem;
+}
+
+.tab li a.active {
+    background-color: #fb773c;
+    color: #0e1111;
+    font-weight: 500;
+}
+
+.tab li:first-child a.active {
+    border-radius: 5px 0 0 0;
+}
+
+.tab li:last-child a.active {
+    border-radius: 0 5px 0 0;
+}
+
+/* Phần nội dung tab */
+
+.tab-content > div {
+    display: none;
+}
+
 .login-section {
     margin: 3rem;
 }
 
-.title {
-    padding: 0;
-    margin: 1rem 0;
+.tab-title {
+    border-top: 1px solid gray;
+    margin: auto;
+    padding: 1rem 0 0;
     font-size: 2rem;
     text-align: center;
 }
 
-p.info {
+.input-box p.info {
     font-size: 1.3rem;
     padding: 0;
-    margin: 0.5rem 0;
+    margin: 0.5rem 3rem;
 }
 
-p.info i {
+.input-box p.info > i {
+    text-indent: 0.5rem;
     font-size: 1rem;
 }
 
@@ -240,8 +288,14 @@ p.info i {
     width: 400px;
     height: 1.6rem;
     font-size: 1.3rem;
+    margin: 0 3rem;
 }
 
+.input-box input::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 .remember > div {
     justify-content: start;
 }
@@ -250,32 +304,28 @@ p.info i {
     cursor: pointer;
 }
 
+.remember a {
+    display: block;
+    text-decoration: none;
+    color: #d6e3ee;
+    margin-left: 10rem;
+}
+
 input#save-info {
     width: auto;
+    margin: 0.5rem 0.5rem 0.5rem 3rem;
 }
 
-.input-box button {
-    display: block;
-    padding: 0;
-    margin: 0;
-    margin-left: auto;
+.confirm button {
     cursor: pointer;
-    background-color: transparent;
-    border: none;
-    color: #d6e3ee;
-    font-size: 1.3rem;
-}
-
-.comfirm button {
     width: 400px;
-    margin: 0.5rem 0;
+    margin: 1rem 3rem 3rem;
     font-size: 1.3rem;
     border: none;
     border-radius: 5px;
 }
 
-.comfirm button:hover {
-    cursor: pointer;
+.confirm button:hover {
     background-color: #fb773c;
 }
 /* MAIN */
@@ -283,7 +333,7 @@ input#save-info {
 /*FOOTER*/
 
 footer {
-    margin-top: 15rem;
+    margin-top: 20rem;
     background-color: #180161;
     width: 100%;
 }
