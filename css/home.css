@@ -469,9 +469,11 @@ footer {
     }
 
     .logo img {
+        display: block;
         margin: 0;
         padding: 0;
-        max-width: 50%;
+        max-width: 70px;
+        max-height: 70px;
     }
 
     .logo h1 {
@@ -490,8 +492,8 @@ footer {
     }
 
     .search-box {
-        width: 40%;
-        margin: 0;
+        width: 50%;
+        margin: auto;
         padding: 0;
     }
 
@@ -501,8 +503,8 @@ footer {
     .search-box input {
         width: 100%;
         border-radius: 15px;
-        height: 1rem;
-        font-size: 0.7rem;
+        height: 2rem;
+        font-size: 1.3rem;
     }
 
     .login {
@@ -538,3 +540,5 @@ footer {
         width: 100%;
     }
 }
+
+/* RESPONSIVE */

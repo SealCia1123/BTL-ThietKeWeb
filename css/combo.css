@@ -248,8 +248,6 @@ nav {
 }
 /* NAV */
 
-/* NAV */
-
 /* MAIN */
 
 main {
@@ -415,6 +413,7 @@ footer {
     }
 
     .search-box {
+        display: none;
         width: 40%;
         margin: 0;
         padding: 0;
@@ -447,15 +446,6 @@ footer {
         margin-top: 70px;
     }
 
-    .slideshow-container {
-        width: 100%;
-    }
-    .movies {
-        width: 100%;
-    }
-    .movie div {
-        min-width: 50%;
-    }
     footer {
         margin-top: 10rem;
     }
