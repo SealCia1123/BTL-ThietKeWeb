@@ -218,7 +218,7 @@ nav {
 
 .nav-mobile-container {
     display: none;
-    width: 50%;
+    width: 100%;
     height: 100%;
     top: 0;
     right: 0;
@@ -243,10 +243,16 @@ nav {
     align-items: end;
 }
 
-.nav-mobile-container ul div li a {
-    font-size: 1.5rem;
+.nav-mobile-container ul div li {
+    width: 100%;
+    text-align: end;
 }
 
+.nav-mobile-container ul div li a {
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    font-size: 1.5rem;
+}
 /* NAV */
 
 /* MAIN */
@@ -449,16 +455,23 @@ footer {
 /* RESPONSIVE */
 
 /* Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1400px) {
     .header-container {
         width: 100%;
+        height: 70px;
         justify-content: space-between;
     }
 
     .logo {
-        width: 20%;
+        width: 30%;
         margin: 0;
         padding: 0;
+    }
+
+    .logo img {
+        margin: 0;
+        padding: 0;
+        max-width: 50%;
     }
 
     .logo h1 {
@@ -466,38 +479,18 @@ footer {
     }
 
     .logo a {
+        height: auto;
         margin: 0;
         padding: 0;
         width: 100%;
     }
 
-    .logo img {
-        padding: 0;
-        margin: 0.5rem 0 0;
-        width: 40%;
-    }
-
     .item {
-        width: 15%;
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    .item a {
-        display: block;
-        margin: 0;
-        border-radius: 2px;
-        padding: 0.4rem;
-        font-size: 0.5rem;
-        text-align: start;
-        text-wrap: wrap;
-    }
-    .item a:first-child {
-        margin: 0.3rem 0;
+        display: none;
     }
 
     .search-box {
+        width: 40%;
         margin: 0;
         padding: 0;
     }
@@ -506,22 +499,27 @@ footer {
         display: none;
     }
     .search-box input {
+        width: 100%;
         border-radius: 15px;
         height: 1rem;
-        width: 100%;
         font-size: 0.7rem;
+    }
+
+    .login {
+        display: none;
+    }
+    .show-nav {
+        width: 20%;
+        text-align: center;
+        display: block;
     }
 
     .nav-container {
         display: none;
     }
 
-    .show-nav {
-        display: block;
-    }
-
     main {
-        margin-top: 55px;
+        margin-top: 70px;
     }
 
     .slideshow-container {
@@ -533,32 +531,10 @@ footer {
     .movie div {
         min-width: 50%;
     }
+    footer {
+        margin-top: 10rem;
+    }
     .foot {
         width: 100%;
-    }
-}
-
-/* Tablet */
-@media only screen and (max-width: 1400px) {
-    .logo h1 {
-        display: none;
-    }
-    .logo img {
-        width: 30%;
-    }
-    .nav-container {
-        width: 100%;
-    }
-    .nav-container ul li * {
-        font-size: 0.8rem;
-    }
-    .header-container {
-        width: 100%;
-    }
-    .slideshow-container {
-        width: 90%;
-    }
-    .movies {
-        width: 90%;
     }
 }

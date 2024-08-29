@@ -67,7 +67,7 @@ window.onload = function () {
         h.addEventListener('wheel', function (event) {
             event.preventDefault();
             h.scrollBy({
-                left: e.deltaY < 0 ? -40 : 40,
+                left: event.deltaY < 0 ? -40 : 40,
             });
         });
     }

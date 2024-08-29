@@ -21,55 +21,96 @@
 
 <body>
     <header class="flex">
-        <div class="logo">
-            <a href="../index.html" class="flex">
-                <img src="../images/OC.png" alt="Logo">
-                <h1>OPEN CINEMA</h1>
-            </a>
-        </div>
+        <div class="header-container flex">
+            <div class="logo">
+                <a href="../index.html" class="flex">
+                    <img src="../images/OC.png" alt="Logo">
+                    <h1>OPEN CINEMA</h1>
+                </a>
+            </div>
 
-        <div class="item flex">
-            <a href="#">Đặt vé <i class="fa-solid fa-ticket"></i></a>
-            <a href="#">Đặt bắp nước <i class="fa-solid fa-glass-water"></i></a>
-        </div>
+            <div class="item flex">
+                <a href="#">Đặt vé <i class="fa-solid fa-ticket"></i></a>
+                <a href="./combo.html">Đặt bắp nước <i class="fa-solid fa-glass-water"></i></a>
+            </div>
 
-        <div class="search-box flex">
-            <input type="text" placeholder="Tìm tên phim..." />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
+            <div class="search-box flex">
+                <button disabled="on" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input autocomplete="off" id="search" type="search" placeholder="Tìm tên phim...">
+            </div>
 
-        <div class="login flex">
-            <a href="#">Đăng nhập</a>
-            <a href="#">Đăng ký</a>
+            <div class="login flex">
+                <a href="#">Đăng nhập</a>
+                <a href="#">Đăng ký</a>
+            </div>
+            <div class="show-nav">
+                <a id="show-button" href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
         </div>
     </header>
 
-    <nav>
-        <ul class="menu flex">
-            <div class="flex groupmenu">
-                <li class="imenu">
-                    <a href="./location.html"><b>CÁC CỤM RẠP</b></a>
-                </li>
-                <li class="imenu">
-                    <a href="./ticket.html"><b>LOẠI VÉ</b></a>
-                </li>
-                <li class="imenu">
-                    <a href="./combo.html"><b>COMBO KHUYẾN MÃI</b></a>
-                </li>
-                <li class="imenu">
-                    <a href="./members.html"><b>QUYỀN LỢI THÀNH VIÊN</b></a>
-                </li>
-                <li class="imenu">
-                    <a href="./policy.html"><b>CHÍNH SÁCH ƯU ĐÃI</b></a>
-                </li>
-                <li class="imenu">
-                    <a href="./recruit.html"><b>TUYỂN DỤNG VỊ TRÍ</b></a>
-                </li>
-                <li class="imenu">
-                    <a href="./cskh.html"><b>DỊCH VỤ CSKH</b></a>
-                </li>
-            </div>
-        </ul>
+    <nav class="flex">
+        <div class="nav-container">
+            <ul class="menu flex">
+                <div class="flex groupmenu">
+                    <li class="imenu">
+                        <a href="./location.html"><b>CÁC CỤM RẠP</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./ticket.html"><b>LOẠI VÉ</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./members.html"><b>QUYỀN LỢI THÀNH VIÊN</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./policy.html"><b>CHÍNH SÁCH ƯU ĐÃI</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./recruit.html"><b>TUYỂN DỤNG VỊ TRÍ</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./cskh.html"><b>DỊCH VỤ CSKH</b></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="nav-mobile">
+        <div class="nav-mobile-container">
+            <a id="close-nav-mobile" href="#">&times;</a>
+            <ul class="menu flex">
+                <div class="flex groupmenu">
+                    <li class="imenu">
+                        <a href="./location.html"><b>CÁC CỤM RẠP</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./ticket.html"><b>LOẠI VÉ</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="#"><b>ĐẶT VÉ</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./combo.html"><b>ĐẶT BẮP NƯỚC</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./members.html"><b>QUYỀN LỢI THÀNH VIÊN</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./policy.html"><b>CHÍNH SÁCH ƯU ĐÃI</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./recruit.html"><b>TUYỂN DỤNG VỊ TRÍ</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./cskh.html"><b>DỊCH VỤ CSKH</b></a>
+                    </li>
+                    <li class="imenu">
+                        <a href="./login.html"><b>ĐĂNG NHẬP - ĐĂNG KÝ</b></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
     </nav>
 
     <main>
