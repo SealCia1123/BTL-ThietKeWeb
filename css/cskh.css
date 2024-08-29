@@ -438,6 +438,11 @@ footer {
         width: 100%;
     }
 
+    .support-form > div {
+        width: 100%;
+        margin: 0.3rem;
+    }
+
     .name-genders {
         display: block;
     }

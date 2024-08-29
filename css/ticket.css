@@ -379,15 +379,14 @@ footer {
         margin-top: 70px;
     }
 
-    .slideshow-container {
-        width: 100%;
+    section {
+        width: 95% !important;
     }
-    .movies {
-        width: 100%;
+
+    section img {
+        max-width: 100%;
     }
-    .movie div {
-        min-width: 50%;
-    }
+
     footer {
         margin-top: 10rem;
     }

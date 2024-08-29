@@ -389,4 +389,18 @@ footer {
     .foot {
         width: 100%;
     }
+
+    section {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    section > div {
+        margin: 1rem auto;
+        width: 100%;
+    }
+
+    section h1 {
+        font-size: 1.7rem;
+    }
 }

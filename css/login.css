@@ -310,10 +310,6 @@ section.container {
     display: none;
 }
 
-.login-section {
-    margin: 3rem;
-}
-
 .tab-title {
     border-top: 1px solid gray;
     margin: auto;
@@ -480,5 +476,35 @@ footer {
     }
     .foot {
         width: 100%;
+    }
+
+    section.container {
+        width: 95% !important;
+    }
+
+    .input-box input {
+        width: 90%;
+        margin: auto;
+        margin-left: 1.5rem;
+    }
+
+    .input-box p.info {
+        margin: auto;
+        margin: 0.5rem 1.5rem;
+    }
+
+    .remember a {
+        margin: auto;
+        margin-right: 1rem;
+    }
+
+    input#save-info {
+        width: auto;
+        margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+    }
+    .confirm button {
+        width: 90%;
+        margin: auto;
+        margin: 1rem 1.5rem;
     }
 }
