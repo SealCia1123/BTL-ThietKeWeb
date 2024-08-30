@@ -280,6 +280,10 @@ section h2 {
     margin: 0;
     padding: 0 5rem 1rem;
 }
+
+.detail li {
+    font-size: 1.2rem;
+}
 /* MAIN */
 
 /*FOOTER*/
@@ -376,11 +380,38 @@ footer {
     }
 
     main {
-        margin-top: 70px;
+        margin-top: 80px;
     }
 
     section {
-        width: 95% !important;
+        width: 90% !important;
+    }
+
+    section h1 {
+        margin: 1rem 0;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    section h2 {
+        margin: 0 0 0.5rem;
+        padding: 0;
+        font-size: 1.3rem;
+    }
+
+    ul.detail {
+        margin: 0;
+        padding: 0;
+    }
+
+    section ul li {
+        display: block;
+        width: 100%;
+        padding-left: 1rem;
+        padding-bottom: 0.3rem;
+    }
+
+    section ul li:last-child {
+        padding-bottom: 1rem;
     }
 
     section img {

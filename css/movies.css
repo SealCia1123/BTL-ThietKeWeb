@@ -395,6 +395,12 @@ main {
     font-weight: bold;
 }
 
+.time {
+    justify-content: start;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
 .time a {
     font-size: 1.2rem;
     text-align: center;
@@ -478,6 +484,7 @@ footer {
     }
 
     .search-box {
+        display: none;
         width: 40%;
         margin: 0;
         padding: 0;
@@ -507,11 +514,84 @@ footer {
     }
 
     main {
-        margin-top: 70px;
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    section.top {
+        width: 90%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin: auto;
+        padding: 0;
+    }
+
+    section.top .top-left {
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+
+    section.top .top-right {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    section.top .top-right .information h1 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0.5rem 0 0;
+        text-align: center;
+    }
+
+    .order-trailer a {
+        font-size: 1rem;
+        margin: 1rem 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    section.bottom {
+        width: 95%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .bottom h2 {
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 1rem 0 0;
+    }
+
+    .movie-date {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .movie-date .box {
+        width: 100%;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+        justify-content: start;
+        overflow-x: auto;
+    }
+    .movie-date .box a {
+        padding: 1rem;
+        margin-right: 0.5rem;
+    }
+    .cinema-locate {
+        width: 100%;
+    }
+    .detail-location .time {
+        justify-content: start;
+        flex-wrap: wrap;
+        flex: 1;
     }
 
     footer {
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
     .foot {
         width: 100%;
