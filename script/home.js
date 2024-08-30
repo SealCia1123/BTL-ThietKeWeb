@@ -1,14 +1,4 @@
 window.onload = function () {
-    // Chuyển hướng đăng nhập hoặc đăng ký riêng cho index.html
-    const loginButton = document.querySelector('.login>a:first-child');
-    const registerButton = document.querySelector('.login>a:last-child');
-    loginButton.addEventListener('click', function () {
-        window.location.href = './pages/login.html#tab1';
-    });
-    registerButton.addEventListener('click', function () {
-        window.location.href = './pages/login.html#tab2';
-    });
-
     // Gắn link phim
     const imgLink = document.querySelectorAll('.movie>div>a');
     const titleLink = document.querySelectorAll('.movie>div>h3>a');

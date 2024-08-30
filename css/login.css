@@ -269,6 +269,7 @@ section.container {
     border: 1px solid gray;
     border-radius: 5px;
     margin: auto;
+    margin-top: 200px !;
 }
 
 /* Phần ul tab */
@@ -349,11 +350,22 @@ section.container {
     cursor: pointer;
 }
 
+.remember label:hover {
+    user-select: none;
+    text-decoration: underline;
+    color: #fb773c;
+}
+
 .remember a {
     display: block;
     text-decoration: none;
     color: #d6e3ee;
     margin-left: 10rem;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+    color: #fb773c;
 }
 
 input#save-info {

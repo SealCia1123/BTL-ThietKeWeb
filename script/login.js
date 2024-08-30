@@ -4,6 +4,7 @@ window.addEventListener('load', function () {
     const tabContent = this.document.querySelectorAll('.tab-content>div');
 
     // Xử lý 2 nút đăng nhập/đăng ký riêng cho trang login
+    // Do trang login không dùng chung logic việc chuyển active từng phần như các trang khác
     const loginButton = document.querySelector('.login>a:first-child');
     const registerButton = document.querySelector('.login>a:last-child');
     loginButton.addEventListener('click', function (event) {
@@ -21,15 +22,15 @@ window.addEventListener('load', function () {
         tabContent[1].classList.add('active');
     });
 
-    // Xử lý chuyển từ trang khác
-    let currentAddress = new String(this.window.location.href);
-    currentAddress = currentAddress.charAt(currentAddress.length - 1);
-    if (currentAddress === '1' || currentAddress === '2') {
-        tabs[currentAddress - 1].classList.add('active');
-        tabContent[currentAddress - 1].classList.add('active');
-    } else {
+    // Xử lý chuyển từ trang khác để hiện đăng nhập hoặc đăng ký phù hợp
+    let lastCharHref = new String(this.window.location.href);
+    lastCharHref = lastCharHref.charAt(lastCharHref.length - 1);
+    if (lastCharHref === '1' || lastCharHref === '#') {
         tabs[0].classList.add('active');
         tabContent[0].classList.add('active');
+    } else {
+        tabs[1].classList.add('active');
+        tabContent[1].classList.add('active');
     }
 
     function removeActive(element) {
@@ -37,8 +38,10 @@ window.addEventListener('load', function () {
             e.classList.remove('active');
         }
     }
+    // Thêm sự kiện 2 nút tab
     for (let t of tabs) {
         t.addEventListener('click', function (event) {
+            // Xóa cả 2 tab và nội dung sau đó add class active vào tab và nội dung tương ứng
             event.preventDefault();
             removeActive(tabs);
             removeActive(tabContent);
@@ -47,38 +50,4 @@ window.addEventListener('load', function () {
             document.querySelector(`${tabNumber}`).classList.add('active');
         });
     }
-
-    // Thông báo đăng ký/đăng nhập
-    const loginBtn = this.document.querySelector('#login-btn');
-    const registerBtn = this.document.querySelector('#register-btn');
-    loginBtn.addEventListener('click', function () {
-        let email = document.forms['login']['email'].value;
-        let pass = document.forms['login']['password'].value;
-        if (email === '' || pass === '') alert('Vui lòng nhập đủ thông tin!');
-        else alert('Đăng nhập thành công!');
-    });
-    registerBtn.addEventListener('click', function () {
-        let name = document.forms['register']['name'].value;
-        let dob = document.forms['register']['dob'].value;
-        let phonenumber = document.forms['register']['phonenumber'].value;
-        let username = document.forms['register']['username'].value;
-        let id = document.forms['register']['id'].value;
-        let email = document.forms['register']['email'].value;
-        let password = document.forms['register']['password'].value;
-        let confirmPassword = document.querySelector('#confirm-password').value;
-        if (
-            name === '' ||
-            dob === '' ||
-            phonenumber === '' ||
-            username === '' ||
-            id === '' ||
-            password === '' ||
-            confirmPassword === ''
-        )
-            alert('Vui lòng nhập đủ thông tin!');
-        else {
-            if (password === confirmPassword) alert('Đăng ký thành công');
-            else alert('Mật khẩu nhập không giống nhau');
-        }
-    });
 });
