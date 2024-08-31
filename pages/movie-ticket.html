@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Đăng nhập - Đăng ký</title>
+    <title>Loại vé</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../script/login.js"></script>
     <script src="../script/nav.js"></script>
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/movie-ticket.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="shortcut icon" href="../images/OC.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,85 +115,14 @@
     </nav>
 
     <main>
-        <section class="container">
-            <ul class="tab flex">
-                <li><a class="" href="#tab1">Đăng nhập</a></li>
-                <li><a class="" href="#tab2">Đăng ký</a></li>
-            </ul>
-            <div class="tab-content">
-                <div id="tab1" class="">
-                    <form action="#">
-                        <h1 class="tab-title">Đăng nhập</h1>
-                        <div class="input-box">
-                            <p class="info">Email hoặc tên tài khoản <i class="fa-solid fa-user"></i></p>
-                            <input name="text" type="text" required>
-                        </div>
-                        <div class="input-box">
-                            <p class="info">Mật khẩu <i class="fa-solid fa-lock"></i></p>
-                            <div class="flex password-box">
-                                <a href"#" class="toggle-password"><i class="fa-solid fa-eye"></i></a>
-                                <input name="password" type="password" required>
-                            </div>
-                        </div>
-                        <div class="input-box remember">
-                            <div class="flex">
-                                <input type="checkbox" name="save-info" id="save-info">
-                                <label for="save-info">Lưu thông tin đăng nhập</label>
-                                <a href="#">Quên mật khẩu</a>
-                            </div>
-                        </div>
-                        <div class="confirm">
-                            <button id="login-btn" type="submit">Đăng nhập</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div id="tab2" class="">
-                    <form action="#">
-                        <h1 class="tab-title">Đăng ký</h1>
-                        <div class="input-box">
-                            <p class="info">Họ và tên <i class="fa-solid fa-user"></i></p>
-                            <input name="name" type="text" required>
-                        </div>
-                        <div class="input-box">
-                            <p class="info">Ngày sinh <i class="fa-solid fa-calendar"></i></p>
-                            <input name="dob" type="date" required>
-                        </div>
-                        <div class="input-box">
-                            <p class="info">Số điện thoại <i class="fa-solid fa-phone"></i></p>
-                            <input name="phonenumber" type="number" required placeholder="+84">
-                        </div>
-                        <div class="input-box">
-                            <p class="info">Tên đăng nhập <i class="fa-solid fa-font"></i></p>
-                            <input name="username" type="text" required>
-                        </div>
-                        <div class="input-box">
-                            <p class="info">CCCD/CMND <i class="fa-solid fa-id-card-clip"></i></p>
-                            <input name="id" type="number" required>
-                        </div>
-                        <div class="input-box">
-                            <p class="info">Email <i class="fa-solid fa-envelope"></i></p>
-                            <input name="email" type="email" required>
-                        </div>
-                        <div class="input-box">
-                            <p class="info">Mật khẩu <i class="fa-solid fa-lock"></i></p>
-                            <div class="flex password-box">
-                                <a href"#" class="toggle-password"><i class="fa-solid fa-eye"></i></a>
-                                <input name="password" type="password" required>
-                            </div>
-                        </div>
-                        <div class="input-box">
-                            <p class="info">Xác nhận mật khẩu <i class="fa-solid fa-lock"></i></p>
-                            <div class="flex password-box">
-                                <a href"#" class="toggle-password"><i class="fa-solid fa-eye"></i></a>
-                                <input name="password" type="password" required>
-                            </div>
-                        </div>
-                        <div class="confirm">
-                            <button id="register-btn" type="submit">Đăng nhập</button>
-                        </div>
-                    </form>
-                </div>
+        <section>
+            <div class="container">
+                <form action="#">
+                    <h1 class="div-title">Đặt vé</h1>
+                    <div class="part">
+                        <h2 class="title">Chọn phim</h2>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

@@ -50,4 +50,18 @@ window.addEventListener('load', function () {
             document.querySelector(`${tabNumber}`).classList.add('active');
         });
     }
+
+    let togglePasswordButton = this.document.querySelectorAll('.toggle-password');
+    let passwordBox = this.document.querySelectorAll('.toggle-password ~ input');
+    for (let i = 0; i < togglePasswordButton.length; i++) {
+        togglePasswordButton[i].addEventListener('click', function () {
+            if (passwordBox[i].getAttribute('type') == 'password') {
+                passwordBox[i].setAttribute('type', 'text');
+                togglePasswordButton[i].innerHTML = `<i class="fa-solid fa-eye-slash"></i>`;
+            } else {
+                passwordBox[i].setAttribute('type', 'password');
+                togglePasswordButton[i].innerHTML = `<i class="fa-solid fa-eye"></i>`;
+            }
+        });
+    }
 });
