@@ -257,7 +257,7 @@ section {
     width: 100%;
 }
 
-div.container {
+.container {
     width: 65%;
     height: 300px;
     margin: auto;

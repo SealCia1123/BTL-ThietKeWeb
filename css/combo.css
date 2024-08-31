@@ -323,19 +323,72 @@ section h1 {
 }
 
 .detail ul li p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin: 0;
     padding: 0 0.5rem;
     text-wrap: wrap;
 }
 
+.detail > .counter {
+    margin-top: 4.5rem !important;
+    padding: 0 !important;
+    background-color: rgba(148, 163, 184, 0.5);
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    border-radius: 5px;
+}
+
+.counter > a {
+    display: block;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+.counter > a:hover {
+    background-color: gold;
+}
+.counter > .count {
+    color: #d6e3ee !important;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    user-select: none;
+}
+
+.bill {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #1d2021;
+    z-index: 99;
+    overflow: hidden;
+}
+.bill > div {
+    margin: auto;
+    width: 60%;
+}
+.bill .pay {
+    display: block;
+    margin: auto;
+    /* margin-top: 1.5rem; */
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 /* MAIN */
 
 /*FOOTER*/
 
 footer {
-    margin-top: 5rem;
+    margin-top: 10rem;
     width: 100%;
     background-color: #180161;
 }
