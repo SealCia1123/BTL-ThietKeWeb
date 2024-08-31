@@ -3,36 +3,42 @@ window.addEventListener('load', function () {
     const addButton = this.document.querySelectorAll('.add');
     const minusButton = this.document.querySelectorAll('.minus');
     let count = this.document.querySelectorAll('.count');
-    let countStack = [];
     let bill = this.document.querySelector('.bill');
-    const itemPrices = this.document.querySelectorAll('.item-price');
+    const itemsPrice = this.document.querySelectorAll('.item-price');
     let totalPrice = parseInt(this.document.querySelector('.total-price').innerText);
-    // Kiểm tra stack count có trống -> ẩn bill
-    function handleBill(stack) {
-        if (stack.length === 0) bill.setAttribute('style', 'display: none');
+    // Kiểm tra totalPrice
+    function displayBill(num) {
+        if (num === 0) bill.setAttribute('style', 'display: none');
         else bill.setAttribute('style', 'display: block');
     }
+
     for (let i = 0; i < addButton.length; i++) {
-        // Push mỗi lần add vào stack và pop mỗi lần minus
-        addButton[i].addEventListener('click', function () {
+        addButton[i].addEventListener('click', function (event) {
+            event.preventDefault();
             let numCount = parseInt(count[i].innerText) + 1;
             count[i].innerText = numCount;
-            countStack.push(1);
-            totalPrice += parseInt(itemPrices[i].innerText) * THOUSAND;
-            document.querySelector('.total-price').innerText = new Intl.NumberFormat('vi-VN', {
+            totalPrice += parseInt(itemsPrice[i].innerText) * THOUSAND;
+            let price = new Intl.NumberFormat('en-US', {
                 style: 'currency',
                 currency: 'VND',
             }).format(totalPrice);
-            handleBill(countStack);
+            price = price.replace('₫', '');
+            document.querySelector('.total-price').innerText = price;
+            displayBill(totalPrice);
         });
-        minusButton[i].addEventListener('click', function () {
+        minusButton[i].addEventListener('click', function (event) {
+            event.preventDefault();
             if (count[i].innerText > 0) {
                 let numCount = parseInt(count[i].innerText) - 1;
                 count[i].innerText = numCount;
-                countStack.pop();
-                totalPrice -= parseInt(itemPrices[i].innerText) * THOUSAND;
-                document.querySelector('.total-price').innerText = totalPrice;
-                handleBill(countStack);
+                totalPrice -= parseInt(itemsPrice[i].innerText) * THOUSAND;
+                let price = new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: 'VND',
+                }).format(totalPrice);
+                price = price.replace('₫', '');
+                document.querySelector('.total-price').innerText = price;
+                displayBill(totalPrice);
             }
         });
     }

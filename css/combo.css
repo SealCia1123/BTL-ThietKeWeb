@@ -372,23 +372,39 @@ section h1 {
 }
 .bill > div {
     margin: auto;
-    width: 60%;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.bill > div > p {
+    font-size: 2rem;
+}
+.bill > div > p > * {
+    font-weight: bold;
 }
 .bill .pay {
     display: block;
     margin: auto;
-    /* margin-top: 1.5rem; */
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     border-radius: 5px;
     font-size: 1.5rem;
     cursor: pointer;
+    box-shadow: none;
+    border: none;
+    background-color: #efefef;
+}
+.bill .pay:first-child {
+    margin-right: 1rem;
+}
+.bill .pay:hover {
+    background-color: #fb773c;
 }
 /* MAIN */
 
 /*FOOTER*/
 
 footer {
-    margin-top: 10rem;
+    margin-top: 9rem;
     width: 100%;
     background-color: #180161;
 }
@@ -516,17 +532,61 @@ footer {
     }
 
     section {
-        width: 100%;
+        width: 100% !important;
     }
 
-    section {
-        width: 100%;
-    }
     .combo h2 {
         font-size: 1.3rem;
     }
     .combo ul li p {
         font-size: 0.8rem;
+    }
+
+    .combo:hover {
+        color: #d6e3ee;
+    }
+
+    .combo:hover img {
+        transform: none;
+    }
+    .counter > a {
+        padding: 1rem;
+    }
+    .counter > a:hover {
+        background-color: transparent;
+    }
+    .counter .count {
+        font-size: 1.3rem;
+    }
+    .bill {
+        height: 20%;
+    }
+    .bill > div {
+        height: 100%;
+        width: 95%;
+    }
+    .bill > div > p {
+        width: 40%;
+        text-wrap: nowrap;
+        font-size: 1.3rem;
+    }
+    .bill > div > p > span {
+        font-size: 1.5rem;
+    }
+    .bill > div > div {
+        flex-direction: column;
+    }
+    .pay {
+        font-size: 1.3rem !important;
+        margin-right: 0 !important;
+        padding: 0.3rem !important;
+    }
+    .pay:first-child {
+        margin-bottom: 1rem;
+    }
+
+    .bill .pay:hover {
+        background-color: #efefef;
     }
 }
 

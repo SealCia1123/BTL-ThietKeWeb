@@ -42,9 +42,9 @@ window.onload = function () {
             let foundMovies = [];
             for (let i = 0; i < movieNames.length; i++) {
                 let stringName = new String(movieNames[i].innerText);
-                stringName = stringName.replace(/ *\([^)]*\) */g, '');
-                if (stringName.includes(userInput))
-                    foundMovies[index++] = movies[i];
+                // Nếu tên phim có chứa giới hạn độ tuổi (T13, T16), bỏ phần giới hạn độ tuổi
+                if (stringName.includes('(')) stringName = stringName.slice(0, -6);
+                if (stringName.includes(userInput)) foundMovies[index++] = movies[i];
             }
             if (foundMovies.length === 0) alert('Khong tim thay phim');
             else displayMovies(foundMovies);
