@@ -7,6 +7,7 @@
     <title>Loại vé</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../script/nav.js"></script>
+    <script src="../script/movie-ticket.js"></script>
     <link rel="stylesheet" href="../css/movie-ticket.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="shortcut icon" href="../images/OC.png" />
@@ -117,10 +118,21 @@
     <main>
         <section>
             <form action="#" class="container">
-                <form action="#">
-                    <h1 class="div-title">Đặt vé</h1>
-                    <div class="form-section">
-                        <h2 class="title">Chọn phim</h2>
+                <h1 class="div-title">Đặt vé</h1>
+                <div class="form-section flex">
+                    <h2 class="title">Chọn rạp</h2>
+                    <div class="select-div">
+                        <select>
+                            <option value="location1">OC - Hồ Hảo Hớn</option>
+                            <option value="location2">OC - Mai Thị Lựu</option>
+                            <option value="location3">OC - Võ Văn Tần</option>
+                            <option value="location4">OC - Nhơn Đức</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-section flex">
+                    <h2 class="title">Chọn phim</h2>
+                    <div class="select-div">
                         <select>
                             <optgroup label="PHIM ĐANG CHIẾU">
                                 <option value="movie1">BẪY (T16)</option>
@@ -144,33 +156,123 @@
                             </optgroup>
                         </select>
                     </div>
+                </div>
 
-                    <div class="form-section">
-                        <h2 class="title">Chọn phim</h2>
-                        <select>
-                            <optgroup label="PHIM ĐANG CHIẾU">
-                                <option value="movie1">BẪY (T16)</option>
-                                <option value="movie2">CHẠY ĐUA VỚI TỬ THẦN (T16)</option>
-                                <option value="movie3">CONAN MOVIE 27 (T13)</option>
-                                <option value="movie4">DEADPOOL VÀ WOLVERINE (T18)</option>
-                                <option value="movie5">ĐẸP TRAI THẤY SAI SAI (T18)</option>
-                                <option value="movie6">MA DA (T16)</option>
-                                <option value="movie7">QUÁI VẬT KHÔNG GIAN (T18)</option>
-                                <option value="movie8">MỒ TRA TẤN (T18)</option>
-                            </optgroup>
-                            <optgroup label="PHIM SẮP CHIẾU">
-                                <option value="movie9">MA SIÊU QUẬY (T13)</option>
-                                <option value="movie10">CHÀNG NỮ PHI CÔNG (T13)</option>
-                                <option value="movie11">ĐẢ NỮ BÁO THÙ (T16)</option>
-                                <option value="movie12">GIẾNG QUỶ (T18)</option>
-                                <option value="movie13">HAI MUỐI (T13)</option>
-                                <option value="movie14">LÀM GIÀU VỚI MA (T13)</option>
-                                <option value="movie15">KHÔNG NÓI ĐIỀU DỮ (T18)</option>
-                                <option value="movie16">JOKER: ĐIÊN CÓ ĐÔI (T16)</option>
-                            </optgroup>
-                        </select>
+                <div class="form-section flex">
+                    <h2 class="title">Chọn ngày</h2>
+                    <div class="select-date flex">
+                        <input class="date-input" id="date1" type="radio" name="date">
+                        <label for="date1">DATE</label>
+                        <input class="date-input" id="date2" type="radio" name="date">
+                        <label for="date2">DATE</label>
+                        <input class="date-input" id="date3" type="radio" name="date">
+                        <label for="date3">DATE</label>
+                        <input class="date-input" id="date4" type="radio" name="date">
+                        <label for="date4">DATE</label>
+                        <input class="date-input" id="date5" type="radio" name="date">
+                        <label for="date5">DATE</label>
                     </div>
-                </form>
+                </div>
+                <div class="form-section flex">
+                    <h2 class="title">Chọn suất chiếu</h2>
+                    <div class="select-time flex">
+                        <input class="time-input" id="time1" type="radio" name="time">
+                        <label for="time1">10:00</label>
+                        <input class="time-input" id="time2" type="radio" name="time">
+                        <label for="time2">13:00</label>
+                        <input class="time-input" id="time3" type="radio" name="time">
+                        <label for="time3">16:00</label>
+                        <input class="time-input" id="time4" type="radio" name="time">
+                        <label for="time4">20:00</label>
+                        <input class="time-input" id="time5" type="radio" name="time">
+                        <label for="time5">22:00</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2 class="title">Chọn loại vé</h2>
+                    <div class="select-ticket flex">
+                        <input class="ticket-input" id="ticket1" type="radio" name="ticket">
+                        <label for="ticket1">Vé phòng PREMIUM</label>
+                        <input class="ticket-input" id="ticket2" type="radio" name="ticket">
+                        <label for="ticket2">Vé phòng thường</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2 class="title">Chọn ghế</h2>
+                    <div class="select-pos">
+                        <div class="row flex">
+                            <p>Hàng A</p>
+                            <input class="seat" type="checkbox">A01
+                            <input class="seat" type="checkbox">A02
+                            <input class="seat" type="checkbox">A03
+                            <input class="seat" type="checkbox">A04
+                            <input class="seat" type="checkbox">A05
+                            <input class="seat" type="checkbox">A06
+                            <input class="seat" type="checkbox">A07
+                            <input class="seat" type="checkbox">A08
+                        </div>
+                        <div class="row flex">
+                            <p class="row-pos">Hàng B</p>
+                            <input class="seat" type="checkbox">B01
+                            <input class="seat" type="checkbox">B02
+                            <input class="seat" type="checkbox">B03
+                            <input class="seat" type="checkbox">B04
+                            <input class="seat" type="checkbox">B05
+                            <input class="seat" type="checkbox">B06
+                            <input class="seat" type="checkbox">B07
+                            <input class="seat" type="checkbox">B08
+                        </div>
+                        <div class="row flex">
+                            <p class="row-pos">Hàng C</p>
+                            <input class="seat" type="checkbox">C01
+                            <input class="seat" type="checkbox">C02
+                            <input class="seat" type="checkbox">C03
+                            <input class="seat" type="checkbox">C04
+                            <input class="seat" type="checkbox">C05
+                            <input class="seat" type="checkbox">C06
+                            <input class="seat" type="checkbox">C07
+                            <input class="seat" type="checkbox">C08
+                        </div>
+                        <div class="row flex">
+                            <p class="row-pos">Hàng D</p>
+                            <input class="seat" type="checkbox">D01
+                            <input class="seat" type="checkbox">D02
+                            <input class="seat" type="checkbox">D03
+                            <input class="seat" type="checkbox">D04
+                            <input class="seat" type="checkbox">D05
+                            <input class="seat" type="checkbox">D06
+                            <input class="seat" type="checkbox">D07
+                            <input class="seat" type="checkbox">D08
+                        </div>
+                        <div class="row flex">
+                            <p class="row-pos">Hàng E</p>
+                            <input class="seat" type="checkbox">E01
+                            <input class="seat" type="checkbox">E02
+                            <input class="seat" type="checkbox">E03
+                            <input class="seat" type="checkbox">E04
+                            <input class="seat" type="checkbox">E05
+                            <input class="seat" type="checkbox">E06
+                            <input class="seat" type="checkbox">E07
+                            <input class="seat" type="checkbox">E08
+                        </div>
+                        <div class="row flex">
+                            <p class="row-pos">Hàng F</p>
+                            <input class="seat" type="checkbox">F01
+                            <input class="seat" type="checkbox">F02
+                            <input class="seat" type="checkbox">F03
+                            <input class="seat" type="checkbox">F04
+                            <input class="seat" type="checkbox">F05
+                            <input class="seat" type="checkbox">F06
+                            <input class="seat" type="checkbox">F07
+                            <input class="seat" type="checkbox">F08
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section flex">
+                    <p>Bạn đã đặt: <span class="ticket-number"></span> vé</p>
+                    <button class="confirmBtn">Xác nhận đặt vé</button>
+                </div>
             </form>
         </section>
     </main>

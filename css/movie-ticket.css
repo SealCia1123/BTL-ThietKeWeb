@@ -259,10 +259,16 @@ section {
 
 .container {
     width: 65%;
-    height: 300px;
     margin: auto;
     background-color: #ecf2ff;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+.form-section {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 h1.div-title {
@@ -271,6 +277,68 @@ h1.div-title {
     margin: 0;
     padding: 0.5rem;
     text-transform: uppercase;
+}
+h2.title {
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+    padding: 1rem;
+}
+
+.date-input {
+    display: none;
+}
+label {
+    display: block;
+}
+
+.time-input {
+    display: none;
+}
+.select-div {
+    width: 60%;
+    position: static;
+}
+.select-div select {
+    display: block;
+    width: 100%;
+    position: static;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+.select-div select option {
+    overflow-y: auto;
+}
+.select-date {
+    width: 60%;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.select-date label {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    margin: 0 0.5rem;
+    background-color: #d6e3ee;
+    border-radius: 5px;
+}
+
+.date-input:checked + label {
+    background-color: #fb773c;
+}
+.select-time {
+    width: 60%;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.select-time label {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    background-color: #d6e3ee;
+    border-radius: 5px;
+}
+
+.time-input:checked + label {
+    background-color: #fb773c;
 }
 /* MAIN */
 
