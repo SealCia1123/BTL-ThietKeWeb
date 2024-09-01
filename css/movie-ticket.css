@@ -278,7 +278,7 @@ h1.div-title {
     padding: 0.5rem;
     text-transform: uppercase;
 }
-h2.title {
+h2.section-title {
     font-size: 1.5rem;
     text-wrap: nowrap;
     padding: 1rem;
@@ -296,17 +296,13 @@ label {
 }
 .select-div {
     width: 60%;
-    position: static;
+    position: relative;
 }
 .select-div select {
     display: block;
     width: 100%;
-    position: static;
     padding: 0.5rem;
     font-size: 1.3rem;
-}
-.select-div select option {
-    overflow-y: auto;
 }
 .select-date {
     width: 60%;
