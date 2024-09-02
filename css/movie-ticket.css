@@ -382,8 +382,12 @@ label {
 }
 
 .confirm-section {
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1.5rem;
+}
+.confirm-section > div {
+    width: 70%;
+    justify-content: space-around;
 }
 .ticket-number {
     font-weight: 500;
@@ -391,7 +395,10 @@ label {
 .total-price {
     font-weight: 500;
 }
+
 .confirm-btn {
+    display: block;
+    width: 30%;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
     background-color: #d6e3ee;
@@ -498,42 +505,101 @@ footer {
     }
 
     main {
-        margin-top: 80px;
+        margin-top: 90px;
     }
 
     section {
-        width: 90% !important;
+        width: 100% !important;
     }
-
-    section h1 {
-        margin: 1rem 0;
-        padding: 0;
-        font-size: 1.5rem;
-    }
-    section h2 {
-        margin: 0 0 0.5rem;
-        padding: 0;
-        font-size: 1.3rem;
-    }
-
-    ul.detail {
-        margin: 0;
-        padding: 0;
-    }
-
-    section ul li {
-        display: block;
+    .container {
         width: 100%;
-        padding-left: 1rem;
-        padding-bottom: 0.3rem;
+    }
+    .form-section {
+        width: 95%;
+    }
+    .section-title {
+        width: 40%;
+        font-size: 1.3rem !important;
+        text-wrap: wrap;
+    }
+    .select-date {
+        width: 60% !important;
+        flex-wrap: nowrap;
+        overflow: auto;
+        width: 60% !important;
+        justify-content: space-between;
+    }
+    .select-date label {
+        text-wrap: nowrap;
+        padding: 0.2rem 0.5rem;
+    }
+    .select-time {
+        width: 60% !important;
+        flex-wrap: nowrap;
+        overflow: auto;
+        width: 60% !important;
+        justify-content: space-evenly;
+    }
+    .select-time label {
+        text-wrap: nowrap;
+        padding: 0.2rem 0.5rem;
     }
 
-    section ul li:last-child {
-        padding-bottom: 1rem;
+    .select-ticket {
+        flex-direction: column;
+        justify-content: end;
+    }
+    .select-ticket label {
+        font-size: 1.3rem !important;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
     }
 
-    section img {
-        max-width: 100%;
+    .seat-div {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .seat-div > h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .select-pos {
+        width: 100% !important;
+    }
+    .row {
+        width: 100%;
+    }
+    .row > p {
+        width: 25%;
+        font-size: 1.2rem;
+        margin: 0;
+        text-align: center;
+    }
+    .row > div {
+        justify-content: space-between;
+        width: 80%;
+        overflow: auto;
+    }
+
+    .confirm-section {
+        font-size: 1.3rem !important;
+        padding-bottom: 2rem;
+    }
+    .confirm-section > div {
+        width: 50%;
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+    }
+    .confirm-section > div > p {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    .confirm-btn {
+        width: 50%;
+        text-wrap: nowrap;
+        font-size: 1.3rem;
     }
 
     footer {
