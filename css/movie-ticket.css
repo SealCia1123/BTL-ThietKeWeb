@@ -275,7 +275,8 @@ h1.div-title {
     font-size: 2rem;
     text-align: center;
     margin: 0;
-    padding: 0.5rem;
+    margin-top: 2rem;
+    padding: 2rem;
     text-transform: uppercase;
 }
 h2.section-title {
@@ -538,7 +539,7 @@ footer {
         flex-wrap: nowrap;
         overflow: auto;
         width: 60% !important;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .select-time label {
         text-wrap: nowrap;

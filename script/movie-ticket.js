@@ -78,7 +78,7 @@ window.addEventListener('load', function () {
     const confirmBtn = this.document.querySelector('.confirm-btn');
     confirmBtn.addEventListener('click', function (event) {
         event.preventDefault();
-        if (totalPrice === 0) alert('Vui lòng điền đủ thông tin!');
+        if (totalPrice === 0) alert('Vui lòng chọn chỗ ngồi!');
         else confirm('Xác nhận đặt vé');
     });
 });
