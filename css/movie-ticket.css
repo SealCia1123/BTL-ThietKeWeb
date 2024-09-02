@@ -316,6 +316,28 @@ label {
     background-color: #d6e3ee;
     border-radius: 5px;
 }
+label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-ticket {
+    width: 60%;
+}
+.select-ticket input {
+    display: none;
+}
+.select-ticket label {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background-color: #d6e3ee;
+}
+.select-ticket input:checked + label {
+    background-color: #fb773c;
+}
 
 .date-input:checked + label {
     background-color: #fb773c;
@@ -334,6 +356,50 @@ label {
 }
 
 .time-input:checked + label {
+    background-color: #fb773c;
+}
+.select-pos {
+    width: 60%;
+}
+.seat {
+    display: none;
+}
+.row-pos {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.row > div > label {
+    display: block;
+    background-color: #d6e3ee;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 3px;
+}
+.row > div > input:checked + label {
+    background-color: #fb773c;
+}
+
+.confirm-section {
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+.ticket-number {
+    font-weight: 500;
+}
+.total-price {
+    font-weight: 500;
+}
+.confirm-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    background-color: #d6e3ee;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.confirm-btn:hover {
+    cursor: pointer;
     background-color: #fb773c;
 }
 /* MAIN */
