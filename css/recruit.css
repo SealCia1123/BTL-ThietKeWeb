@@ -184,11 +184,11 @@ nav {
     width: 100%;
 }
 
-.menu div>li {
+.menu div > li {
     list-style-type: none;
 }
 
-.menu div>li>a {
+.menu div > li > a {
     color: white;
     text-decoration: none;
     padding: 1rem;
@@ -196,17 +196,17 @@ nav {
     display: block;
 }
 
-.menu div>li>a:hover {
+.menu div > li > a:hover {
     background-color: #fb773c;
     color: #1f316f;
     cursor: pointer;
 }
 
-.menu>div {
+.menu > div {
     margin: auto;
 }
 
-.groupmenu>div {
+.groupmenu > div {
     margin-left: auto;
 }
 
@@ -383,7 +383,9 @@ footer {
     width: 6em;
     margin: 1em;
 }
-
+textarea {
+    resize: none;
+}
 /* FOOTER */
 
 /* RESPONSIVE */

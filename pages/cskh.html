@@ -7,6 +7,7 @@
     <title>Chăm sóc khách hàng</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../script/nav.js"></script>
+    <script src="../script/cskh.js"></script>
     <link rel="stylesheet" href="../css/cskh.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="shortcut icon" href="../images/OC.png" />
@@ -121,11 +122,11 @@
                 <div class="name-genders">
                     <div class="name">
                         <h3><i class="fa-solid fa-signature"></i> Họ và tên</h3>
-                        <input type="text" placeholder="Nhập họ và tên...">
+                        <input id="name-input" type="text" placeholder="Nhập họ và tên...">
                     </div>
                     <div class="genders">
                         <h3><i class="fa-solid fa-venus-mars"></i> Giới tính</h3>
-                        <select name="gender-select">
+                        <select id="gender-input" name="gender-select">
                             <option>Chọn giới tính</option>
                             <option value="nam">NAM</option>
                             <option value="nu">NỮ</option>
@@ -135,22 +136,22 @@
 
                 <div>
                     <h3><i class="fa-solid fa-envelope"></i> Email liên lạc</h3>
-                    <input type="text" placeholder="abc@mail.com">
+                    <input id="email-input" type="text" placeholder="abc@mail.com">
                 </div>
 
                 <div>
                     <h3><i class="fa-solid fa-phone"></i> Số điện thoại liên lạc</h3>
-                    <input type="text" placeholder="Nhập số điện thoại...">
+                    <input id="phone-input" type="text" placeholder="Nhập số điện thoại...">
                 </div>
 
                 <div>
                     <h3><i class="fa-solid fa-map-location-dot"></i> Địa chỉ liên lạc</h3>
-                    <input type="text" placeholder="Nhập địa chỉ...">
+                    <input id="address-input" type="text" placeholder="Nhập địa chỉ...">
                 </div>
 
                 <div>
                     <h3><i class="fa-solid fa-indent"></i> Chọn mục nội dung cần hỗ trợ</h3>
-                    <select name="support-content">
+                    <select id="support-input" name="support-content">
                         <option>Chọn mục nội dung</option>
                         <option value="khieu-nai">XỬ LÝ KHIẾU NẠI</option>
                         <option value="ky-thuat">HỖ TRỢ KỸ THUẬT</option>
@@ -161,7 +162,7 @@
 
                 <div>
                     <h3><i class="fa-solid fa-comment"></i> Nội dung chi tiết vấn đề cần hỗ trợ</h3>
-                    <textarea rows="20" placeholder="Nhập nội dung chi tiết..."></textarea>
+                    <textarea id="content-input" rows="20" placeholder="Nhập nội dung chi tiết..."></textarea>
                 </div>
                 <button class="submit">GỬI PHIẾU CHĂM SÓC KHÁCH HÀNG</button>
             </div>

@@ -253,6 +253,9 @@ nav {
 
 /* MAIN */
 
+.toggle-password {
+    color: #d6e3ee;
+}
 main {
     margin-top: 160px;
 }
